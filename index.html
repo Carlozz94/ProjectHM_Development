@@ -4,92 +4,130 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>W&M</title>
+    <!-- estilo de cursor -->
+    <link rel="stylesheet" href="./Cursor/cursor.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../Cursor/cursor.css">
+    <link rel="stylesheet" href="./Index.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
   </head>
-  <body>
+  <body style="background-color: #f5f3e6;">
+
     <!--**************************Header***************************-->
     <header>
+      <!-- <div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="./Extras/Video/Textil.mp4" type="video/mp4">
+        </video>
+      </div> -->
+
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-            <!--Icono-->
-            <a class="navbar-brand" href="../index.html">
-                <img src="../Assets/Logo/Logo1.png" alt="Logo" height="50px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav m-auto"> 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Hombre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mujer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quejas y sugerencias</a>
-                    </li>
-                </ul>
-                <hr class="text-white-50">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 d-none d-lg-inline-block" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Buscar</button>
-                  </form>
-
-                <!--Enlaces redes sociales--> 
-                <ul class="navbar-nav flex-row flex-wrap text-light">
-                    <li class="nav-item col-4 col-md-auto p-1">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-facebook"></i>
-                            <small class="d-md-none ms-0">Facebook</small>
-                        </a>
-                    </li>
-                    <li class="nav-item col-4 col-md-auto p-1">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-whatsapp"></i>
-                            <small class="d-md-none ms-0">Whatsapp</small>
-                        </a>
-                    </li>
-                    <li class="nav-item col-4 col-md-auto p-1">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-github"></i>
-                            <small class="d-md-none ms-0">GitHub</small>
-                        </a>
-                    </li>
-                </ul>
-                <form class="d-flex"></form>
-                <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
-              </div>
-        </div>
-    </nav>
+          <div class="container-fluid">
+              <!--Icono-->
+              <a class="navbar-brand" href="../index.html">
+                  <img src="./Assets/Logo/Logo1.png" alt="Logo" height="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav m-auto"> 
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#">Hombre</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Mujer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./Contacto/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs/aboutUs.html">Acerca de Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Quejas y sugerencias</a>
+                      </li>
+                  </ul>
+                  <hr class="text-white-50">
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2 d-none d-lg-inline-block" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Buscar</button>
+                    </form>
+  
+                  <!--Enlaces redes sociales--> 
+                  <ul class="navbar-nav flex-row flex-wrap text-light">
+                      <li class="nav-item col-4 col-md-auto p-1">
+                          <a class="nav-link" href="#">
+                              <i class="bi bi-facebook"></i>
+                              <small class="d-md-none ms-0">Facebook</small>
+                          </a>
+                      </li>
+                      <li class="nav-item col-4 col-md-auto p-1">
+                          <a class="nav-link" href="#">
+                              <i class="bi bi-whatsapp"></i>
+                              <small class="d-md-none ms-0">Whatsapp</small>
+                          </a>
+                      </li>
+                      <li class="nav-item col-4 col-md-auto p-1">
+                          <a class="nav-link" href="#">
+                              <i class="bi bi-github"></i>
+                              <small class="d-md-none ms-0">GitHub</small>
+                          </a>
+                      </li>
+                  </ul>
+                  <form class="d-flex"></form>
+                  <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
+                </div>
+          </div>
+      </nav>
     </header>
-
-    <!--****************************Main***********************************-->
-    <main class="container border">
-      <div class="container text-center align-content-center">
-        Barra de envio gratis
+    <h2 style="text-align: center;">W & M</h2>
+    <div class="general_container">
+      <div class="sobre-nosotros col-12">
+      <br>
       </div>
-
+      <br>
+      <br>
+      <br>
+      <div class="container row">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="./Extras/Video/Textil.mp4" type="video/mp4">
+        </video>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <!--****************************Main***********************************-->
+    <main class="container">
+      <br>
+      <br>
+      <br>
       <main class="container">
         <div
           class="container text-center align-content-center mt-5 mb-5 bg-danger"
           id="barraEnvios"
         >
-          <div class="pt-3 pb-3 fs-4 fst-italic">
-            Envios gratis a partir de $1500 MXN
+          <div class="pt-3 pb-3 fs-4 fst-italic" style="color:bisque">
+            Envios gratis a partir de $200 MXN
           </div>
         </div>
   
@@ -100,9 +138,11 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="./Assets/abrigo.jpg"
+                    src="./Assets/img_index/sudadera_roja.jpg"
                     class="d-block w-100"
                     alt="..."
+                    height="542px"
+                    width="430px"
                   />
                   <div class="row">
                     <div class="col-8 text-start">nombre</div>
@@ -114,9 +154,11 @@
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="./Assets/abrigo.jpg"
+                    src="./Assets/img_index/sudadera.jpg"
                     class="d-block w-100"
                     alt="..."
+                    height="560px"
+                    width="430px"
                   />
                   <div class="row">
                     <div class="col-8 text-start">nombre</div>
@@ -128,9 +170,11 @@
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="./Assets/abrigo.jpg"
+                    src="./Assets/img_index/sudadera_gris.jpg"
                     class="d-block w-100"
                     alt="..."
+                    height="542px"
+                    width="430px"
                   />
                   <div class="row">
                     <div class="col-8 text-start">nombre</div>
@@ -169,10 +213,10 @@
           </div>
           <!--************************producto**************************-->
           <div class="col-12 col-lg-4 mb-5">
-            <img src="./Assets/abrigo.jpg" class="d-block w-100" alt="..." />
+            <img src="./Assets/img_index/sudadera_negra.jpg" class="d-block w-100" alt="..." />
             <div class="row">
-              <div class="col-8 text-start">nombre</div>
-              <div class="col-4 text-start">precio</div>
+              <div class="col-8 text-start">Sudadera negra hombre</div>
+              <div class="col-4 text-start">$599</div>
               <div class="col-12 text-start">colores</div>
               <div class="col-8 text-start">talla</div>
               <div class="col-4 text-start">total</div>
@@ -180,10 +224,10 @@
           </div>
           <!--************************producto**************************-->
           <div class="col-12 col-lg-4 mb-5">
-            <img src="./Assets/abrigo.jpg" class="d-block w-100" alt="..." />
+            <img src="./Assets/img_index/playera_mujer_gris.jpg" class="d-block w-100" alt="..." />
             <div class="row">
-              <div class="col-8 text-start">nombre</div>
-              <div class="col-4 text-start">precio</div>
+              <div class="col-8 text-start">Playera de algodón</div>
+              <div class="col-4 text-start">$399</div>
               <div class="col-12 text-start">colores</div>
               <div class="col-8 text-start">talla</div>
               <div class="col-4 text-start">total</div>
@@ -191,10 +235,10 @@
           </div>
           <!--************************producto**************************-->
           <div class="col-12 col-lg-4 mb-5">
-            <img src="./Assets/abrigo.jpg" class="d-block w-100" alt="..." />
+            <img src="./Assets/img_index/playera_mujer_blanca.jpg" class="d-block w-100" alt="..." />
             <div class="row">
-              <div class="col-8 text-start">nombre</div>
-              <div class="col-4 text-start">precio</div>
+              <div class="col-8 text-start">Playera de algodón</div>
+              <div class="col-4 text-start">$399</div>
               <div class="col-12 text-start">colores</div>
               <div class="col-8 text-start">talla</div>
               <div class="col-4 text-start">total</div>
@@ -202,10 +246,10 @@
           </div>
           <!--************************producto**************************-->
           <div class="col-12 col-lg-4 mb-5">
-            <img src="./Assets/abrigo.jpg" class="d-block w-100" alt="..." />
+            <img src="./Assets/img_index/playera_negra1.jpg" class="d-block w-100" alt="..." />
             <div class="row">
-              <div class="col-8 text-start">nombre</div>
-              <div class="col-4 text-start">precio</div>
+              <div class="col-8 text-start">Playera de bambú</div>
+              <div class="col-4 text-start">$420</div>
               <div class="col-12 text-start">colores</div>
               <div class="col-8 text-start">talla</div>
               <div class="col-4 text-start">total</div>
@@ -213,10 +257,10 @@
           </div>
           <!--************************producto**************************-->
           <div class="col-12 col-lg-4 mb-5">
-            <img src="./Assets/abrigo.jpg" class="d-block w-100" alt="..." />
+            <img src="./Assets/img_index/sueter.jpg" class="d-block w-100" alt="..." />
             <div class="row">
-              <div class="col-8 text-start">nombre</div>
-              <div class="col-4 text-start">precio</div>
+              <div class="col-8 text-start">Suéter de algodón</div>
+              <div class="col-4 text-start">$599</div>
               <div class="col-12 text-start">colores</div>
               <div class="col-8 text-start">talla</div>
               <div class="col-4 text-start">total</div>
@@ -226,11 +270,9 @@
         </div>
       </main>
 
-      <div>Aqui ira las imagenes del contenedor principal</div>
     </main>
 
     <!--**********************Footer******************-->
-    <!--*********************Footer*****************-->
     <footer class="bg-black">
       <nav class="d-flex justify-content-evenly text-white text-center">
         <a class="navbar-brand d-lg-none" href="/" target="_blank">
@@ -374,7 +416,8 @@
           <p>Quejas y sugerencias</p>
         </a>
       </nav>
-    </footer>
+      <h6 class="derechos_reser" style="text-align: center; color: white;">© W&M 2023. Todos los derechos reservados</h6>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

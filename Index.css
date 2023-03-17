@@ -1,3 +1,18 @@
+.general_container {
+    background-color: #f5f3e6;
+  }
+  
+  .sobre-nosotros {
+    position: relative;
+    max-width: 100rem;
+    margin: auto;
+    margin-top: 17rem;
+  }
+  
+  .container {
+    position:relative;
+    margin: auto;
+  }
 body{
     cursor: url(../Assets/Cursor/hoja-verde.png), auto;
 }
@@ -8,7 +23,7 @@ button{
     cursor: url(../Assets/Cursor/hoja-verde.png), auto;
 }
 video{
-    position: relative;
+    position:absolute;
     top: 50%;
     left: 50%;
     width: auto;
