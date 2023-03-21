@@ -1,0 +1,47 @@
+.general_container {
+    background-color: #f5f3e6;
+  }
+  
+  .sobre-nosotros {
+    position: relative;
+    max-width: 100rem;
+    margin: auto;
+    margin-top: 17rem;
+  }
+  
+  .container {
+    position:relative;
+    margin: auto;
+  }
+body{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+a{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+button{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+video{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+
+/*Ajustar medidas del Main para que no choque con el video*/
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+
+}
