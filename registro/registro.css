@@ -1,0 +1,17 @@
+#registro {
+  margin: 5em 0em 0em 0em;
+  align-content: center;
+  min-width: auto;
+}
+
+.form-group {
+  margin: 2em;
+}
+#terminos {
+  padding: 0em 11em 11em 11em;
+}
+
+img {
+  max-width: 40em;
+  max-height: 60em;
+}
