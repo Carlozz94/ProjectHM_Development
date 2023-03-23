@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>W & M</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--Icono-->
+            <a class="navbar-brand" href="#">
+                <img src="./Assets/Logo1.png" alt="Logo" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quejas y sugerencias</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                      </a>
+                    </li>
+
+                </ul>
+                <hr class="text-white-50">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+
+                <!--Enlaces redes sociales--> 
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-facebook"></i>
+                            <small class="d-lg-none ms-0">Facebook</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                            <small class="d-lg-none ms-0">Whatsapp</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-github"></i>
+                            <small class="d-lg-none ms-0">GitHub</small>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Login</button>               
+              </div>
+        </div>
+    </nav>
+
+    </header>
+    <main>
+      <div class="row mt-5" id="contenedor"></div>
+    </main>
+    
+
+    <div class="container-xl">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Carrito</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                Vaciar carrito
+              </button>
+              <button type="button" id="procesarCompra" class="btn btn-primary">
+                Continuar compra
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+
+              <span>Precio total:</span>
+              <p class="text-center" id="precioTotal"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
