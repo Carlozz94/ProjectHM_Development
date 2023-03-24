@@ -19,7 +19,7 @@
         <div class="container-fluid">
           <!--Icono-->
           <a class="navbar-brand" href="index.html">
-            <img src="./Assets/Logo1.png" alt="Logo" height="50px" />
+            <img src=" " alt="Logo" height="50px" />
           </a>
           <button
             class="navbar-toggler"
@@ -106,7 +106,7 @@
       <div class="row">
         <div class="col-0 col-sm-6"></div>
         <div class="col-12 col-sm-6">
-          <form id="registro">
+          <form id="registroUsuarios">
             <div class="form-group">
               <input
                 type="text"
@@ -165,7 +165,12 @@
               </label>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-primary" type="button" id="resistro">
+              <button
+                class="btn btn-primary"
+                type="submit"
+                id="registro"
+                onclick="redireccionIniciarSesion()"
+              >
                 Registrarse
               </button>
             </div>
@@ -330,5 +335,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./inicioOregistro.js"></script>
   </body>
 </html>
