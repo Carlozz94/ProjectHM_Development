@@ -19,4 +19,12 @@ function guardarDatosCarrito(id){
     document.getElementById("confirmacion").innerHTML = "Agregado a su carrito: "+id; 
 
 }
+
+//desarrollo de funcion que obtiene informacion del local storage y lo muestra en la pagina por medio de etiquetas html
+function getLocalStorage(id){
+    let posicion =document.getElementById("datosLocalStorage")
+    let datosAlmacenados = document.createElement("h2");
+    datosAlmacenados.textContent = localStorage.getItem(id);
+
+}
     
