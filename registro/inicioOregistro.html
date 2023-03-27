@@ -12,18 +12,24 @@
   </head>
   <body>
     <div class="container">
-      <div class="form-login">
-        <button type="submit" onclick="redireccionIniciarSesion()">
-          Iniciar sesión
-        </button>
+      <div class="row">
+        <div class="col-6">Aqui ira la imagen</div>
+        <div class="col-6">
+          <div class="contenedorBotones">
+            <div class="login">
+              <button type="submit" onclick="redireccionIniciarSesion()">
+                <p class="botonContenido">Iniciar sesión</p>
+              </button>
 
-        <button type="submit" onclick="redireccionRegistro()">
-          Registrarse
-        </button>
+              <button type="submit" onclick="redireccionRegistro()">
+                <p class="botonContenido">Registrarse</p>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./inicioOregistro.js"></script>
