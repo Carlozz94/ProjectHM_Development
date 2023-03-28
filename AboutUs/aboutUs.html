@@ -28,69 +28,79 @@
 
 </head>
 <body style="background-color: #f5f3e6;">
-    <!-- Navbar -->
+
+    <!--**************************Header***************************-->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container-fluid">
-              <!--Icono-->
-              <a class="navbar-brand" href="../index.html">
-                  <img src="../Assets/Logo/Logo1.png" alt="Logo" height="50px">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <div class="collapse navbar-collapse" id="menu">
-                  <ul class="navbar-nav m-auto"> 
-                      <li class="nav-item">
-                          <a class="nav-link active" href="#">Hombre</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="">Mujer</a>
-                      </li>
-                      <li class="nav-item">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--Icono-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Assets/Logo/Logo1.png" alt="Logo" height="50px">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Mujer/mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Quejas y sugerencias</a>
-                      </li>
-                  </ul>
-                  <hr class="text-white-50">
-                  <form class="d-flex" role="search">
-                      <input class="form-control me-2 d-none d-lg-inline-block" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Buscar</button>
-                    </form>
-  
-                  <!--Enlaces redes sociales--> 
-                  <ul class="navbar-nav flex-row flex-wrap text-light">
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-facebook"></i>
-                              <small class="d-md-none ms-0">Facebook</small>
-                          </a>
-                      </li>
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-whatsapp"></i>
-                              <small class="d-md-none ms-0">Whatsapp</small>
-                          </a>
-                      </li>
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-github"></i>
-                              <small class="d-md-none ms-0">GitHub</small>
-                          </a>
-                      </li>
-                  </ul>
-                  <form class="d-flex"></form>
-                  <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
-                </div>
-          </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quejas y sugerencias</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                      </a>
+                    </li>
+
+                </ul>
+                <hr class="text-white-50">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+
+                <!--Enlaces redes sociales--> 
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-facebook"></i>
+                            <small class="d-lg-none ms-0">Facebook</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                            <small class="d-lg-none ms-0">Whatsapp</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" target="_blank" href="https://github.com/Carlozz94/ProjectHM_Development.git">
+                            <i class="bi bi-github"></i>
+                            <small class="d-lg-none ms-0">GitHub</small>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Login</button>               
+              </div>
+        </div>
       </nav>
-  </header>
+    </header>
 
     <!-- Contenedor general -->
     <div class="general-container">
@@ -209,26 +219,26 @@
           <div class="carousel-item mb-4 active">
             <div class="row text-center justify-content-center align-items-center my-2">
               <div class="col-10 col-md-4 px-5">
-                <img class="d-block"
+                <img class="d-block width-100"
                 src="../Assets/AboutUs/hector.png"
                 class="rounded-circle float-start"
                 alt="..."
-                height="280px" width="280px"
                 />
               </div>
-              <div class="col-10 col-sm-6">
+              <div class="description col-10 col-sm-6">
                 <h4>Hector Gallardo</h4>
                 <br>
-                <p class="description" style="text-align: justify;">
+                <p><b>Full Stack Developer Jr</b></p>
+                <p style="text-align: justify;">
                   Ingeniero en aeronáutica proactivo con habilidades de liderazgo,
                   toma de decisiones y orientación al detalle. Actualmente miembro
                   del equipo CodeHunters en Generation México para el desarrollo de
-                  una aplicación web como desarrollador Full Stack.
+                  una aplicación web.
                 </p>
-                <a href="https://github.com/Hector220419">
+                <a href="https://github.com/Hector220419" target="_blank">
                   <img class="git" src="../Assets/iconos/git.png" alt="git_hector" style="width:50px; border-radius:0px;">
                 </a>
-                <a href="https://www.linkedin.com/in/hector220419/">
+                <a href="https://www.linkedin.com/in/hector220419/" target="_blank">
                   <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_hector" style="width:50px; border-radius:0px;">
                 </a>
               </div>
@@ -239,27 +249,27 @@
           <div class="carousel-item mb-4">
             <div class="row text-center justify-content-center align-items-center my-2">
               <div class="col-10 col-md-4 px-5">
-                <img class="d-block"
+                <img class="d-block width-100"
                 src="../Assets/aboutUs/jesus.png"
                 class="rounded-circle float-start"
                 alt="..."
-                height="280px" width="280px"
                 />
               </div>
-              <div class="col-10 col-sm-6">
+              <div class="description col-10 col-sm-6">
                 <h4>Jesus Martinez</h4>
                 <br>
-                <p class="description" style="text-align: justify;">
-                  Estoy enfocado en el aprendizaje y mejoramiento continuo para
+                <p><b>Full Stack Developer Jr</b></p>
+                <p style="text-align: justify;">
+                  Enfocado en el aprendizaje y mejoramiento continuo para
                   crecer y permitir el crecimiento de las personas a mi alrededor.
-                  Miembro del equipo de desarrollo CodeHunters en Generation México
+                  Miembro del equipo  CodeHunters en Generation México
                   encargados del desarrollo de una aplicación web.
                 </p>
-                <a href="https://github.com/jesusmtzlpkaizen">
-                  <img class="git" src="../Assets/iconos/git.png" alt="git_hector" style="width:50px; border-radius:0px;">
+                <a href="https://github.com/jesusmtzlpkaizen" target="_blank">
+                  <img class="git" src="../Assets/iconos/git.png" alt="git_jesus" style="width:50px; border-radius:0px;">
                 </a>
-                <a href="https://www.linkedin.com/in/jesusmtzlpkaizen/">
-                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_hector" style="width:50px; border-radius:0px;">
+                <a href="https://www.linkedin.com/in/jesusmtzlpkaizen/" target="_blank">
+                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_jesus" style="width:50px; border-radius:0px;">
                 </a>
               </div>
             </div>
@@ -269,27 +279,27 @@
           <div class="carousel-item mb-4">
             <div class="row text-center justify-content-center align-items-center my-2">
               <div class="col-10 col-md-4 px-5">
-                <img class="d-block"
+                <img class="d-block width-100"
                 src="../Assets/aboutUs/estef.png"
                 class="rounded-circle float-start"
                 alt="..."
-                height="280px" width="230px"
               />
               </div>
-              <div class="col-10 col-sm-6">
+              <div class="description col-10 col-sm-6">
                 <h4>Estefania Ramos</h4>
                 <br>
-                <p class="description" style="text-align: justify;">
+                <p><b>Full Stack Developer Jr</b></p>
+                <p style="text-align: justify;">
                   Ingeniera en Computación interesada en el aprendizaje de nuevas
-                  tecnologías, trabajo en equipo y proactividad. Actualmente miembro
+                  tecnologías, trabajo en equipo y proactividad. Miembro
                   del equipo CodeHunters en Generation México, aplicando las
                   tecnologías aprendidas para el desarrollo de una e-commerce.
                 </p>
-                <a href="https://github.com/EstefaniaR5">
-                  <img class="git" src="../Assets/iconos/git.png" alt="git_hector" style="width:50px; border-radius:0px;">
+                <a href="https://github.com/EstefaniaR5" target="_blank">
+                  <img class="git" src="../Assets/iconos/git.png" alt="git_estefania" style="width:50px; border-radius:0px;">
                 </a>
-                <a href="https://www.linkedin.com/in/estefania-ramos-santiago/">
-                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_hector" style="width:50px; border-radius:0px;">
+                <a href="https://www.linkedin.com/in/estefania-ramos-santiago/" target="_blank">
+                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_estefania" style="width:50px; border-radius:0px;">
                 </a>
               </div>
             </div>
@@ -299,55 +309,60 @@
           <div class="carousel-item mb-4">
             <div class="row text-center justify-content-center align-items-center my-2">
               <div class="col-10 col-md-4 px-5">
-                <img class="d-block"
+                <img class="d-block width-100"
                 src="../Assets/aboutUs/carlos.png"
                 class="rounded-circle float-start"
                 alt="..."
-                height="290px" width="220px"
               />
               </div>
-              <div class="col-10 col-sm-6">
+              <div class="description col-10 col-sm-6">
                 <h4>Carlos Zarate</h4>
                 <br>
-                <p class="description" style="text-align: justify;">
+                <p><b>Full Stack Developer Jr</b></p>
+                <p cstyle="text-align: justify;">
                   Ingeniero en Sistemas, tengo 28 años, me gustan lo retos y
                   actualmente formo parte de Generation México, soy miembro del
                   equipo CodeHunters para el desarrollo de una aplicacion web
                   FullStack relacionada al e-commerce.
+                  <br>
                 </p>
-                <a href="https://github.com/Carlozz94">
-                  <img class="git" src="../Assets/iconos/git.png" alt="git_hector" style="width:50px; border-radius:0px;">
+                <a href="https://github.com/Carlozz94" target="_blank">
+                  <img class="git" src="../Assets/iconos/git.png" alt="git_carlos" style="width:50px; border-radius:0px;">
                 </a>
-                <a href="https://www.linkedin.com">
-                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_hector" style="width:50px; border-radius:0px;">
+                <a href="https://www.linkedin.com" target="_blank">
+                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_carlos" style="width:50px; border-radius:0px;">
                 </a>
               </div>
             </div>
           </div>
+
           <!-- GERARDO -->
           <div class="carousel-item mb-4">
             <div class="row text-center justify-content-center align-items-center my-2">
               <div class="col-10 col-md-4 px-5">
-                <img class="d-block"
+                <img class="d-block width-100"
                 src="../Assets/aboutUs/gerardo.png"
                 class="rounded-circle float-start"
                 alt="..."
-                height="280px" width="280px"
                 />
               </div>
-              <div class="col-10 col-sm-6">
+              <div class="description col-10 col-sm-6">
                 <h4>Gerardo Custodio</h4>
                 <br>
-                <p class="description" style="text-align: justify;">
+                <p><b>Full Stack Developer Jr</b></p>
+                <p style="text-align: justify;">
                   Ingeniero en Sistemas abierto a nuevos aprendizajes, 
                   participo en el desarrollo de una aplicación web Ecommerce 
                   para Ropa Sustentable en el curso de GenerationMX.
+                  <br>
+                  <br>
+                  <br>
                 </p>
-                <a href="https://github.com/GeraDevTab">
-                  <img class="git" src="../Assets/iconos/git.png" alt="git_hector" style="width:50px; border-radius:0px;">
+                <a href="https://github.com/GeraDevTab" target="_blank">
+                  <img class="git" src="../Assets/iconos/git.png" alt="git_gerardo" style="width:50px; border-radius:0px;">
                 </a>
-                <a href="https://www.linkedin.com/in/gerardojimenezcustodio/">
-                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_hector" style="width:50px; border-radius:0px;">
+                <a href="https://www.linkedin.com/in/gerardojimenezcustodio/" target="_blank">
+                  <img class="linkedin" src="../Assets/iconos/linkdin.png" alt="link_gerardo" style="width:50px; border-radius:0px;">
                 </a>
               </div>
             </div>
@@ -375,15 +390,17 @@
       </div>
     </main>
     <br>
+    
     <!--**********************Footer******************-->
-    <footer class="bg-black">
+    <footer class="bg-color">
+      <br>
       <nav class="d-flex justify-content-evenly text-white text-center">
-        <a class="navbar-brand d-lg-none" href="/" target="_blank">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-house-door"
             viewBox="0 0 16 16"
           >
@@ -394,12 +411,12 @@
           <p>Inicio</p>
         </a>
 
-        <a class="navbar-brand d-lg-none" href="/">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-shop"
             viewBox="0 0 16 16"
           >
@@ -410,12 +427,12 @@
           <p>Compras</p>
         </a>
 
-        <a class="navbar-brand d-lg-none" href="/">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-person-circle"
             viewBox="0 0 16 16"
           >
@@ -428,12 +445,12 @@
           <p>Login</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="../AboutUs/aboutUs.html">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="../AboutUs/aboutUs.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-info-circle-fill"
             viewBox="0 0 16 16"
           >
@@ -444,12 +461,12 @@
           <p>Acerca de nosotros</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="../Contacto/contacto.html">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="../Contacto/contacto.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-envelope-fill"
             viewBox="0 0 16 16"
           >
@@ -460,12 +477,12 @@
           <p>Contacto</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="/">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-facebook"
             viewBox="0 0 16 16"
           >
@@ -477,7 +494,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-twitter"
             viewBox="0 0 16 16"
           >
@@ -489,7 +506,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-instagram"
             viewBox="0 0 16 16"
           >
@@ -500,12 +517,12 @@
           <p>Redes sociales</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="/">
+        <a style="color: rgb(10, 75, 10)" class="navbar-brand d-none d-lg-inline" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-exclamation-triangle"
             viewBox="0 0 16 16"
           >
@@ -519,8 +536,9 @@
           <p>Quejas y sugerencias</p>
         </a>
       </nav>
-      <h6 class="derechos_reser" style="text-align: center;">© W&M 2023. Todos los derechos reservados</h6>
-    </footer>
+      <h6 style="text-align: center; color: rgb(10, 75, 10);">© W&M 2023. Todos los derechos reservados</h6>
+      
+    </footer>   
 
 
 

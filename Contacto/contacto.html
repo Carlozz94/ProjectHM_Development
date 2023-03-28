@@ -20,68 +20,78 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Navbar -->
+
+    <!--**************************Header***************************-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <!--Icono-->
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../Assets/Logo/Logo1.png" alt="Logo" height="50px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-    
-                  <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav m-auto"> 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Hombre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Mujer</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quejas y sugerencias</a>
-                        </li>
-                    </ul>
-                    <hr class="text-white-50">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 d-none d-lg-inline-block" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Buscar</button>
-                      </form>
-    
-                    <!--Enlaces redes sociales--> 
-                    <ul class="navbar-nav flex-row flex-wrap text-light">
-                        <li class="nav-item col-4 col-md-auto p-1">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-facebook"></i>
-                                <small class="d-md-none ms-0">Facebook</small>
-                            </a>
-                        </li>
-                        <li class="nav-item col-4 col-md-auto p-1">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-whatsapp"></i>
-                                <small class="d-md-none ms-0">Whatsapp</small>
-                            </a>
-                        </li>
-                        <li class="nav-item col-4 col-md-auto p-1">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-github"></i>
-                                <small class="d-md-none ms-0">GitHub</small>
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="d-flex"></form>
-                    <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
-                  </div>
-            </div>
-        </nav>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--Icono-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Assets/Logo/Logo1.png" alt="Logo" height="50px">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Mujer/mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quejas y sugerencias</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                      </a>
+                    </li>
+
+                </ul>
+                <hr class="text-white-50">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+
+                <!--Enlaces redes sociales--> 
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-facebook"></i>
+                            <small class="d-lg-none ms-0">Facebook</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                            <small class="d-lg-none ms-0">Whatsapp</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" target="_blank" href="https://github.com/Carlozz94/ProjectHM_Development.git">
+                            <i class="bi bi-github"></i>
+                            <small class="d-lg-none ms-0">GitHub</small>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Login</button>               
+              </div>
+        </div>
+      </nav>
     </header>
 
     <div class="content">
@@ -161,7 +171,7 @@
                 </div>
             </div>
     </div>
-
+    
     <!--**********************Footer******************-->
     <footer class="bg-black">
       <nav class="d-flex justify-content-evenly text-white text-center">

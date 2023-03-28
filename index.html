@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>W&M</title>
+    <title>W & M</title>
+
+    <!-- fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <!-- estilo de cursor -->
     <link rel="stylesheet" href="./Cursor/cursor.css">
     <link
@@ -18,121 +26,108 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
   </head>
-  <body style="background-color: #f5f3e6;">
+  <body style="background-color: #f0f4d8;">
 
     <!--**************************Header***************************-->
     <header>
-      <!-- <div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="./Extras/Video/Textil.mp4" type="video/mp4">
-        </video>
-      </div> -->
-
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container-fluid">
-              <!--Icono-->
-              <a class="navbar-brand" href="../index.html">
-                  <img src="./Assets/Logo/Logo1.png" alt="Logo" height="50px">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <div class="collapse navbar-collapse" id="menu">
-                  <ul class="navbar-nav m-auto"> 
-                      <li class="nav-item">
-                          <a class="nav-link active" href="#">Hombre</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="">Mujer</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./Contacto/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./AboutUs/aboutUs.html">Acerca de Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Quejas y sugerencias</a>
-                      </li>
-                  </ul>
-                  <hr class="text-white-50">
-                  <form class="d-flex" role="search">
-                      <input class="form-control me-2 d-none d-lg-inline-block" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-light d-none d-lg-inline-block" type="submit">Buscar</button>
-                    </form>
-  
-                  <!--Enlaces redes sociales--> 
-                  <ul class="navbar-nav flex-row flex-wrap text-light">
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-facebook"></i>
-                              <small class="d-md-none ms-0">Facebook</small>
-                          </a>
-                      </li>
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-whatsapp"></i>
-                              <small class="d-md-none ms-0">Whatsapp</small>
-                          </a>
-                      </li>
-                      <li class="nav-item col-4 col-md-auto p-1">
-                          <a class="nav-link" href="#">
-                              <i class="bi bi-github"></i>
-                              <small class="d-md-none ms-0">GitHub</small>
-                          </a>
-                      </li>
-                  </ul>
-                  <form class="d-flex"></form>
-                  <a href="./registro/iniciarSesion.html">
-                    <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
-                  </a>
-                </div>
-          </div>
-      </nav>
+      <nav class="color-nav navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!--Icono-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="./Assets/Logo/Logo.png" alt="Logo" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Mujer/mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../AboutUs/aboutUs.html">Acerca de Nosotros</a>
+                    </li>
+                    
+
+                </ul>
+                <hr class="text-white-50">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                  </form>
+
+                <!--Enlaces redes sociales--> 
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-facebook"></i>
+                            <small class="d-lg-none ms-0">Facebook</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                            <small class="d-lg-none ms-0">Whatsapp</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4 col-md-auto p-1">
+                        <a class="nav-link" target="_blank" href="https://github.com/Carlozz94/ProjectHM_Development.git">
+                            <i class="bi bi-github"></i>
+                            <small class="d-lg-none ms-0">GitHub</small>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                        <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                      </a>
+                    </li>
+
+                </ul>
+                <form class="d-flex"></form>
+                <a href="./registro/iniciarSesion.html">
+                  <button class="btn btn-outline-light d-none d-md-inline-block" type="submit">Login</button>               
+                </a>
+              </div>
+        </div>
+    </nav>
     </header>
-    <h2 style="text-align: center;">W & M</h2>
-    <div class="general_container">
-      <div class="sobre-nosotros col-12">
-      <br>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="container row">
+    
+    <br>
+    <h2 class="title1" style="text-align: center;">W & M</h2>
+    <br>
+    <!-- Div con el video-->
+    <div class="general_container row">
+      <div class="sobre-nosotros col-8 ">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
           <source src="./Extras/Video/Textil.mp4" type="video/mp4">
         </video>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <div class="video">
+      </div>
     </div>
+    
+    
+    <!-- ***************Barra de envíos fuera del main*********************-->
+    <div class="barraEnvios text-center align-content-center mt-5 mb-5"
+          id="barraEnvios">
+    <div class="barraEnvios pb-3 fs-4 fst-italic">
+      Envíos gratis a partir de $499 MXN
+    </div>
+    </div>
+    
     <!--****************************Main***********************************-->
     <main class="container">
-      <br>
-      <br>
-      <br>
-      <main class="container">
-        <div
-          class="container text-center align-content-center mt-5 mb-5 bg-danger"
-          id="barraEnvios"
-        >
-          <div class="pt-3 pb-3 fs-4 fst-italic" style="color:bisque">
-            Envios gratis a partir de $200 MXN
-          </div>
-        </div>
-  
+      <main class="container-productos">
+
         <div class="row flex-sm-column flex-lg-row text-center mb-5">
           <!--************************carrusel**************************-->
           <div class="col-12 col-lg-4 mb-5">
@@ -273,16 +268,17 @@
       </main>
 
     </main>
-
+    
     <!--**********************Footer******************-->
-    <footer class="bg-black">
+    <footer class="bg-color">
+      <br>
       <nav class="d-flex justify-content-evenly text-white text-center">
-        <a class="navbar-brand d-lg-none" href="/" target="_blank">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-house-door"
             viewBox="0 0 16 16"
           >
@@ -293,12 +289,12 @@
           <p>Inicio</p>
         </a>
 
-        <a class="navbar-brand d-lg-none" href="/">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-shop"
             viewBox="0 0 16 16"
           >
@@ -309,12 +305,12 @@
           <p>Compras</p>
         </a>
 
-        <a class="navbar-brand d-lg-none" href="./registro/iniciarSesion.html">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-lg-none" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-person-circle"
             viewBox="0 0 16 16"
           >
@@ -327,12 +323,12 @@
           <p>Login</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="../AboutUs/aboutUs.html">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="../AboutUs/aboutUs.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-info-circle-fill"
             viewBox="0 0 16 16"
           >
@@ -343,12 +339,12 @@
           <p>Acerca de nosotros</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="../Contacto/contacto.html">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="../Contacto/contacto.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="btn-outline-dark"
             class="bi bi-envelope-fill"
             viewBox="0 0 16 16"
           >
@@ -359,12 +355,12 @@
           <p>Contacto</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="/">
+        <a style="color: rgb(5, 51, 5)" class="navbar-brand d-none d-lg-inline" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-facebook"
             viewBox="0 0 16 16"
           >
@@ -376,7 +372,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-twitter"
             viewBox="0 0 16 16"
           >
@@ -388,7 +384,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-instagram"
             viewBox="0 0 16 16"
           >
@@ -399,12 +395,12 @@
           <p>Redes sociales</p>
         </a>
 
-        <a class="navbar-brand d-none d-lg-inline" href="/">
+        <a style="color: rgb(10, 75, 10)" class="navbar-brand d-none d-lg-inline" href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="white"
+            fill="dark"
             class="bi bi-exclamation-triangle"
             viewBox="0 0 16 16"
           >
@@ -418,7 +414,8 @@
           <p>Quejas y sugerencias</p>
         </a>
       </nav>
-      <h6 class="derechos_reser" style="text-align: center; color: white;">© W&M 2023. Todos los derechos reservados</h6>
+      <h6 class="derechos_reser" style="text-align: center; color: rgb(10, 75, 10);">© W&M 2023. Todos los derechos reservados</h6>
+      
     </footer>
 
     <script
