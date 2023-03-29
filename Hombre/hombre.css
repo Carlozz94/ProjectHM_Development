@@ -1,0 +1,25 @@
+body{
+    background-color: #f5f3e6;
+  }
+  
+  .general-container {
+    background-color: #f5f3e6;
+  }
+    
+  .mujer {
+    position: relative;
+    max-width: 80rem;
+    margin: auto;
+  }
+  
+  .title{
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+  }
+  
+  .bg-color{
+      background-image: url("../Assets/img_index/hojas.png");
+  }
