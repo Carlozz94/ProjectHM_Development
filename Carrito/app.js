@@ -5,7 +5,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Carrito/Assets/1.jpg",
+    img: "./Assets/1.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1500,
-    img: "../Carrito/Assets/2.jpg",
+    img: "Assets/2.jpg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1570,
-    img: "../Carrito/Assets/3.jpg",
+    img: "Assets/3.jpg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1000,
-    img: "../Carrito/Assets/4.jpg",
+    img: "Assets/4.jpg",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Assets/Mujer/Blusas/4.jpg",
+    img: "Assets/5.jpg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Assets/Mujer/Pantalones/1.jpg",
+    img: "Assets/6.jpg",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "No compres esto por tu bien",
     precio: 1400,
-    img: "../Carrito/Assets/8.jpg",
+    img: "Assets/8.jpg",
   },
   {
     id: 8,
@@ -61,7 +61,23 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Carrito/Assets/11.jpg",
+    img: "Assets/11.jpg",
+  },
+  {
+    id: 9,
+    nombre: "Blusa casual",
+    cantidad: 1,
+    desc: "Casual",
+    precio: 1400,
+    img: "Assets/12.jpg",
+  },
+  {
+    id: 10,
+    nombre: "Top casual",
+    cantidad: 1,
+    desc: "Casual",
+    precio: 1200,
+    img: "Assets/10.jpg",
   },
 ];
 let carrito = [];
@@ -89,7 +105,6 @@ if(formulario){
   formulario.addEventListener('submit', enviarCompra)
 }
 
-
 if (vaciarCarrito) {
   vaciarCarrito.addEventListener("click", () => {
     carrito.length = [];
@@ -116,8 +131,8 @@ stockProductos.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
-    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+    <div class="card mt-3" style="width: 18rem;">
+    <img class="card-img-top mt-2" src="${img}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">${nombre}</h5>
       <p class="card-text">Precio: ${precio}</p>
@@ -187,7 +202,6 @@ const mostrarCarrito = () => {
       0
     );
   }
-
   guardarStorage();
 };
 
@@ -200,6 +214,7 @@ function eliminarProducto(id) {
   carrito = carrito.filter((juego) => juego.id !== juegoId);
   mostrarCarrito();
 }
+
 function procesarPedido() {
   carrito.forEach((prod) => {
     const listaCompra = document.querySelector("#lista-compra tbody");
