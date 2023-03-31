@@ -1,7 +1,7 @@
 const registrarse = document.querySelector("#registroUsuarios");
 registrarse.addEventListener("submit", (e) => {
   e.preventDefault();
-  localStorage.clear();
+
   const nombre = document.querySelector("#nombre").value;
   const apellido = document.querySelector("#apellido").value;
   const telefono = document.querySelector("#telefono").value;
