@@ -5,7 +5,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "Assets/1.jpg",
+    img: "./Assets/1.jpg",
   },
   {
     id: 2,
@@ -105,7 +105,6 @@ if(formulario){
   formulario.addEventListener('submit', enviarCompra)
 }
 
-
 if (vaciarCarrito) {
   vaciarCarrito.addEventListener("click", () => {
     carrito.length = [];
@@ -203,7 +202,6 @@ const mostrarCarrito = () => {
       0
     );
   }
-
   guardarStorage();
 };
 
@@ -216,6 +214,7 @@ function eliminarProducto(id) {
   carrito = carrito.filter((juego) => juego.id !== juegoId);
   mostrarCarrito();
 }
+
 function procesarPedido() {
   carrito.forEach((prod) => {
     const listaCompra = document.querySelector("#lista-compra tbody");
