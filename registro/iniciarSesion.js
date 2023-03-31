@@ -16,5 +16,6 @@ iniciar.addEventListener("submit", (e) => {
     return alert("Datos incorrectos");
   }
   alert("Bienvenido");
+
   window.location.href = "./perfil.html";
 });
