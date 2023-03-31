@@ -1,11 +1,15 @@
 var perfilUsuario = JSON.parse(localStorage.getItem("usuarios"));
 
-document.querySelector("#nombreUsuario").textContent = perfilUsuario[0].nombre;
+var usuario = perfilUsuario.length;
+
+document.querySelector("#nombreUsuario").textContent =
+  perfilUsuario[usuario - 1].nombre;
 
 document.querySelector("#apellidoUsuario").textContent =
-  perfilUsuario[0].apellido;
+  perfilUsuario[usuario - 1].apellido;
 
-document.querySelector("#emailUsuario").textContent = perfilUsuario[0].email;
+document.querySelector("#emailUsuario").textContent =
+  perfilUsuario[usuario - 1].email;
 
 document.querySelector("#telefonoUsuario").textContent =
-  perfilUsuario[0].telefono;
+  perfilUsuario[usuario - 1].telefono;

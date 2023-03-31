@@ -11,6 +11,7 @@ iniciar.addEventListener("submit", (e) => {
   const valido = usuarios.find(
     (usuarios) => usuarios.email === email && usuarios.contrasena == contrasena
   );
+
   if (!valido) {
     return alert("Datos incorrectos");
   }
