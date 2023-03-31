@@ -109,7 +109,7 @@
             <div class="card">
               <div class="card-header text-center">Inicio de sesion</div>
               <div class="card-body">
-                <form>
+                <form id="inicio">
                   <div class="form-group">
                     <label for="email">Correo electrónico</label>
                     <input
@@ -117,6 +117,7 @@
                       class="form-control"
                       id="email"
                       placeholder="Introduce tu correo electrónico"
+                      autofocus
                     />
                   </div>
                   <div class="form-group">
@@ -124,15 +125,11 @@
                     <input
                       type="password"
                       class="form-control"
-                      id="password"
+                      id="contrasena"
                       placeholder="Introduce tu contraseña"
                     />
                   </div>
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    onclick="redireccionPerfil()"
-                  >
+                  <button type="submit" class="btn btn-primary">
                     Iniciar sesión
                   </button>
                   <div>
@@ -300,5 +297,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./iniciarSesion.js"></script>
   </body>
 </html>
