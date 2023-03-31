@@ -214,7 +214,7 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "../Carrito/compra.html";
+      location.href = "./mujer.html";
     }
   });
 }

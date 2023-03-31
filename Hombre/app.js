@@ -123,7 +123,7 @@ const stockProductosMujer= [
           confirmButtonText: "Aceptar",
         });
       } else {
-        location.href = "../Carrito/compra.html";
+        location.href = "hombre.html";
       }
     });
   }
