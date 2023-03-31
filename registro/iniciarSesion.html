@@ -12,13 +12,13 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: #f9ffda;">
     <!--**************************Header***************************-->
-    <header>
+    <header >
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <!--Icono-->
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="../index.html">
             <img src="./Assets/Logo1.png" alt="Logo" height="50px" />
           </a>
           <button
@@ -101,52 +101,71 @@
     </header>
 
     <!--****************************Main***********************************-->
+    <div class="container">
+      <br>
+      <br>
+      <br>
+    </div>
 
     <main>
-      <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 justify-content-center">
-            <div class="card">
-              <div class="card-header text-center">Inicio de sesion</div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Introduce tu correo electrónico"
-                    />
+    
+    <!--card-->
+    <div class="container" id="inicia">
+      <div class="col-md">
+      <div class="card mb-6" style="max-width: 1280px;" >
+        <!--style="max-width: 1280px;"-->
+        <div class="row no-gutters">
+          <div class="col-sm-6">
+            <img src="assets/images/ropa_naturaleza.jpg" alt="imagen_naturaleza">
+          </div>
+          <div class="col-sm-6">
+            <div class="card-body">
+              <center> <h2 class="card-title">INICIA SESIÓN</h2></center>
+                <br>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <form id="inicio">
+                          <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              placeholder="Introduce tu correo electrónico"
+                              autofocus
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="contrasena" class="form-control" id="password" placeholder="Introduce tu contraseña" required />
+                          </div>
+                          <button  type="submit" class="btn btn-primary">
+                            Iniciar sesión
+                          </button>
+                          <div>
+                            <a href="">Olvide mi contraseña</a>
+                          </div>
+                        </form>
+                        
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      placeholder="Introduce tu contraseña"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    onclick="redireccionPerfil()"
-                  >
-                    Iniciar sesión
-                  </button>
-                  <div>
-                    <a href="">Olvide mi contraseña</a>
-                  </div>
-                </form>
-                <div class="p-5 m-5"></div>
-              </div>
+                </div>
+
             </div>
-            <div class="p-5 m-5"></div>
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </main>
+
+    <div>
+      <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br>
+    </div>
 
     <!--**********************Footer******************-->
     <!--*********************Footer*****************-->
@@ -300,5 +319,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./iniciarSesion.js"></script>
   </body>
 </html>

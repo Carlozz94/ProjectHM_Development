@@ -12,13 +12,13 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: #f9ffda;">
     <!--**************************Header***************************-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <!--Icono-->
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="../index.html">
             <img src=" " alt="Logo" height="50px" />
           </a>
           <button
@@ -101,86 +101,113 @@
     </header>
 
     <!--****************************Main***********************************-->
+    <div class="container">
+      <br>
+      <br>
+      <br>
+    </div>
 
     <main>
-      <div class="row">
-        <div class="col-0 col-sm-6"></div>
-        <div class="col-12 col-sm-6">
-          <form id="registroUsuarios">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Nombre"
-                name="nombre"
-              />
+      <div class="container" id="inicia">
+        <div class="col-md">
+        <div class="card mb-6" style="max-width: 1280px;" >
+          <!--style="max-width: 1280px;"-->
+          <div class="row no-gutters">
+            <div class="col-sm-6">
+              <img src="assets/images/pareja_ropa.jpg" alt="imagen_naturaleza">
             </div>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="apellido"
-                placeholder="Apellidos"
-                name="apellido"
-              />
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="telefono"
-                  placeholder="Número de celular"
-                  name="telefono"
-                />
+            <div class="col-sm-6">
+              <div class="card-body">
+                <center> <h2 class="card-title">CREA TU CUENTA</h2></center>
+                
+                
+                  <br>
+                  <div class="row">
+                    
+                    <div class="col-sm-6">
+                      <form id="registroUsuarios">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombre"
+                            placeholder="Nombre"
+                            name="nombre" required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="apellido"
+                            placeholder="Apellidos"
+                            name="apellido"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="telefono"
+                              placeholder="Número de celular"
+                              name="telefono" required
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Email"
+                            name="email" required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="contrasena"
+                            placeholder="Contraseña"
+                            name="contrasena"
+                          />
+                        </div>
+                        <div class="form-group form-check text-black">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              name="aceptar"
+                            />
+                            Acepto los términos y condiciones
+                          </label>
+                        </div>
+                        <div class="col-md-6">
+                          <button
+                            class="btn btn-primary"
+                            type="submit"
+                            id="registro"
+                            onclick="redireccionIniciarSesion()"
+                          >
+                            Registrarse
+                          </button>
+                        </div>
+                        <div id="terminos">
+                          <a href="" class="d-block text-center">Ya tengo una cuenta</a>
+                          <a href="" class="d-block text-center">Terminos y condiciones</a>
+                        </div>
+                      </form>
+                      
+                    </div>
+                  </div>
               </div>
             </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Email"
-                name="email"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                id="contrasena"
-                placeholder="Contraseña"
-                name="contrasena"
-              />
-            </div>
-            <div class="form-group form-check text-black">
-              <label class="form-check-label">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="aceptar"
-                />
-                <p>Acepto los términos y condiciones</p>
-              </label>
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button
-                class="btn btn-primary"
-                type="submit"
-                id="registro"
-                onclick="redireccionIniciarSesion()"
-              >
-                Registrarse
-              </button>
-            </div>
-          </form>
-          <div id="terminos">
-            <a href="" class="d-block text-center">Ya tengo una cuenta</a>
-            <a href="" class="d-block text-center">Terminos y condiciones</a>
           </div>
         </div>
       </div>
+      </div>
+      
     </main>
 
     <!--**********************Footer******************-->
@@ -335,6 +362,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./inicioOregistro.js"></script>
+    <script src="./registro.js"></script>
   </body>
 </html>
