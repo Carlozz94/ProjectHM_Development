@@ -37,7 +37,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Carrito/Assets/5.jpg",
+    img: "../Assets/Mujer/Blusas/4.jpg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "../Carrito/Assets/6.jpg",
+    img: "../Assets/Mujer/Pantalones/1.jpg",
   },
   {
     id: 7,
@@ -61,23 +61,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "Assets/11.jpg",
-  },
-  {
-    id: 9,
-    nombre: "Blusa casual",
-    cantidad: 1,
-    desc: "Casual",
-    precio: 1400,
-    img: "Assets/12.jpg",
-  },
-  {
-    id: 10,
-    nombre: "Top casual",
-    cantidad: 1,
-    desc: "Casual",
-    precio: 1200,
-    img: "Assets/10.jpg",
+    img: "../Carrito/Assets/11.jpg",
   },
 ];
 let carrito = [];
@@ -132,8 +116,8 @@ stockProductos.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class="card mt-3" style="width: 18rem;">
-    <img class="card-img-top mt-2" src="${img}" alt="Card image cap">
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">${nombre}</h5>
       <p class="card-text">Precio: ${precio}</p>

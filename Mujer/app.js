@@ -1,88 +1,180 @@
-const stockProductosMujer= [
+const stockProductosMujer= [ /*blusas */
   {
     id: 1,
-    nombre: "Vestido blanco",
+    nombre: "Blusa blanca con cierre",
     cantidad: '',
-    desc: "Casual",
-    precio: 800,
-    img: "../Assets/Mujer/2_2.jpg",
+    desc: "Estilo formal",
+    precio: "$599",
+    img: "../Assets/Mujer/Blusas/7_7.jpg",
   },
   {
     id: 2,
-    nombre: "Pantalon café",
+    nombre: "Blusa negra con tirantes",
     cantidad: '',
-    desc: "Casual",
-    precio: 999,
-    img: "../Assets/Mujer/4_4.jpg",
+    desc: "Estilo formal/casual",
+    precio: "$399",
+    img: "../Assets/Mujer/Blusas/4.jpg",
   },
   {
     id: 3,
-    nombre: "Vestido a cuadros",
+    nombre: "Camisa blanca overize",
     cantidad: '',
     desc: "Casual",
-    precio: 1399,
-    img: "../Assets/Mujer/6_6.jpg",
+    precio: "$599",
+    img: "../Assets/Mujer/Blusas/1.jpg",
   },
   {
     id: 4,
-    nombre: "Blusa rayada",
+    nombre: "Blusa beige a tirantes",
     cantidad: '',
-    desc: "Casual",
-    precio: 799,
-    img: "../Carrito/Assets/4.jpg",
+    desc: "Estilo casual",
+    precio: "$399",
+    img: "../Assets/Mujer/Blusas/12_12.jpg",
   },
+] 
+const stockProductosMujerPlayeras= [
   {
     id: 5,
-    nombre: "Blusa blanca",
-    cantidad: 1,
-    desc: "Formal",
-    precio: 1199,
-    img: "../Assets/Mujer/7_7.jpg",
+    nombre: "Playeras oversize",
+    cantidad: '',
+    desc: "Casual",
+    precio: 299,
+    img: "../Assets/Mujer/Playeras/12.jpg",
   },
   {
     id: 6,
-    nombre: "Chaqueta multicolor",
+    nombre: "Playera Hippie",
     cantidad: '',
     desc: "Casual",
-    precio: 1200,
-    img: "../Carrito/Assets/6.jpg",
+    precio: 599,
+    img: "../Assets/Mujer/Playeras/11.jpg",
   },
   {
     id: 7,
-    nombre: "Vestido blanco tablillas",
+    nombre: "Playera con letras",
     cantidad: '',
-    desc: "Verano",
-    precio: 1399,
-    img: "../Assets/Mujer/10_10.jpg",
+    desc: "Trendy",
+    precio: 499,
+    img: "../Assets/Mujer/Playeras/3.jpg",
   },
   {
     id: 8,
-    nombre: "Suéter azul cielo",
-    cantidad: 1,
-    desc: "Spring",
-    precio: 699,
-    img: "../Assets/Mujer/14.jpg",
+    nombre: "Playera rayada",
+    cantidad: '',
+    desc: "Casual/Primavera",
+    precio: 499,
+    img: "../Assets/Mujer/Playeras/4.jpg",
   },
+]
+const stockProductosMujerPantalones= [
   {
     id: 9,
-    nombre: "Camisa de mezclilla",
+    nombre: "Pantalón negro",
     cantidad: '',
-    desc: 'Casual',
-    precio: 1299,
-    img: "../Assets/Mujer/13.jpg",
+    desc: "Casual",
+    precio: 699,
+    img: "../Assets/Mujer/Pantalones/4.jpg",
   },
   {
     id: 10,
-    nombre: "Pantalon beige",
+    nombre: "Pantalón de vestir negro",
+    cantidad: '',
+    desc: "Formal",
+    precio: 699,
+    img: "../Assets/Mujer/Pantalones/5.jpg",
+  },
+  {
+    id: 11,
+    nombre: "Pantalón mezclilla clara",
+    cantidad: '',
+    desc: "Casual/Trendy",
+    precio: 699,
+    img: "../Assets/Mujer/Pantalones/3.jpg",
+  },
+  {
+    id: 12,
+    nombre: "Pantalón mezclilla roto",
+    cantidad: '',
+    desc: "Casual/Urban",
+    precio: 699,
+    img: "../Assets/Mujer/Pantalones/1.jpg",
+  },
+]
+const stockProductosMujerVestidos= [
+  {
+    id: 13,
+    nombre: "Vestido cuadros rojo/negro",
+    cantidad: '',
+    desc: "Vestido casual con cinturón",
+    precio: 899,
+    img: "../Assets/Mujer/Vestidos/6_6.jpg",
+  },
+  {
+    id: 14,
+    nombre: "Vestido mezclilla con botones",
     cantidad: '',
     desc: "Casual",
+    precio: 899,
+    img: "../Assets/Mujer/Vestidos/1.jpg",
+  },
+  {
+    id: 15,
+    nombre: "Vestido arena casual",
+    cantidad: '',
+    desc: "Trendy/casual",
     precio: 999,
-    img: "../Assets/Mujer/12_12.jpg",
+    img: "../Assets/Mujer/Vestidos/4.jpg",
+  },
+  {
+    id: 16,
+    nombre: "Vestido negro formal",
+    cantidad: '',
+    desc: "Formal/cómodo",
+    precio: 999,
+    img: "../Assets/Mujer/Vestidos/2.jpg",
+  },
+]
+const stockProductosMujerSueteres= [
+  {
+    id: 17,
+    nombre: "Suéter oversize",
+    cantidad: '',
+    desc: "Casual/Cómodo",
+    precio: 599,
+    img: "../Assets/Mujer/Sueteres/1.jpg",
+  },
+  {
+    id: 18,
+    nombre: "Abrigo con bolsas",
+    cantidad: '',
+    desc: "Casual/Cómodo/Trendy",
+    precio: 899,
+    img: "../Assets/Mujer/Sueteres/3.jpg",
+  },
+  {
+    id: 19,
+    nombre: "Suéter azul con botones",
+    cantidad: '',
+    desc: "Casual/Cómodo",
+    precio: 499,
+    img: "../Assets/Mujer/Sueteres/14.jpg",
+  },
+  {
+    id: 20,
+    nombre: "Suéter gris largo",
+    cantidad: '',
+    desc: "Casual/Cómodo",
+    precio: 599,
+    img: "../Assets/Mujer/Sueteres/2.jpg",
   },
 ];
 let carrito = [];
 
 const contenedor = document.querySelector("#contenedor");
+const contenedorMP = document.querySelector('#contenedorMP');
+const contenedorMPa = document.querySelector('#contenedorMPa');
+const contenedorMV = document.querySelector('#contenedorMV');
+const contenedorMS = document.querySelector('#contenedorMS');
 const carritoContenedor = document.querySelector("#carritoContenedor");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
@@ -97,7 +189,6 @@ if (activarFuncion) {
 
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
   mostrarCarrito();
   document.querySelector("#activarFuncion").click(procesarPedido);
 });
@@ -132,7 +223,79 @@ stockProductosMujer.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class="card mt-3" style="width: 22rem; margin:auto;">
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${nombre}</h5>
+      <p class="card-text">Precio: ${precio}</p>
+      <p class="card-text">Descripcion: ${desc}</p>
+      <p class="card-text">Cantidad: ${cantidad}</p>
+      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+    </div>
+  </div>
+    `;
+  }
+});
+
+stockProductosMujerPlayeras.forEach((prod) => {
+  const { id, nombre, precio, desc, img, cantidad } = prod;
+  if (contenedorMP) {
+    contenedorMP.innerHTML += `
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${nombre}</h5>
+      <p class="card-text">Precio: ${precio}</p>
+      <p class="card-text">Descripcion: ${desc}</p>
+      <p class="card-text">Cantidad: ${cantidad}</p>
+      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+    </div>
+  </div>
+    `;
+  }
+});
+
+stockProductosMujerPantalones.forEach((prod) => {
+  const { id, nombre, precio, desc, img, cantidad } = prod;
+  if (contenedorMPa) {
+    contenedorMPa.innerHTML += `
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${nombre}</h5>
+      <p class="card-text">Precio: ${precio}</p>
+      <p class="card-text">Descripcion: ${desc}</p>
+      <p class="card-text">Cantidad: ${cantidad}</p>
+      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+    </div>
+  </div>
+    `;
+  }
+});
+
+stockProductosMujerVestidos.forEach((prod) => {
+  const { id, nombre, precio, desc, img, cantidad } = prod;
+  if (contenedorMV) {
+    contenedorMV.innerHTML += `
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+    <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${nombre}</h5>
+      <p class="card-text">Precio: ${precio}</p>
+      <p class="card-text">Descripcion: ${desc}</p>
+      <p class="card-text">Cantidad: ${cantidad}</p>
+      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+    </div>
+  </div>
+    `;
+  }
+});
+
+stockProductosMujerSueteres.forEach((prod) => {
+  const { id, nombre, precio, desc, img, cantidad } = prod;
+  if (contenedorMS) {
+    contenedorMS.innerHTML += `
+    <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
     <img class="card-img-top my-2" src="${img}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">${nombre}</h5>
@@ -156,8 +319,16 @@ const agregarProducto = (id) => {
       }
     })
   } else {
-    const item = stockProductos.find((prod) => prod.id === id)
+    const item = stockProductosMujer.find((prod) => prod.id === id)
+    const item1 = stockProductosMujerPlayeras.find((prod) => prod.id ==id)
+    const item2 = stockProductosMujerPantalones.find((prod) => prod.id ==id)
+    const item3 = stockProductosMujerVestidos.find((prod) => prod.id ==id)
+    const item4 = stockProductosMujerSueteres.find((prod) => prod.id ==id)
     carrito.push(item)
+    carrito.push(item1)
+    carrito.push(item2)
+    carrito.push(item3)
+    carrito.push(item4)
   }
   mostrarCarrito()
 

@@ -1,7 +1,9 @@
 .general-container {
-  background-color: #f5f3e6;
+  background-color: #f9ffda;
 }
-
+.color-nav{
+  background-color: #76cc2b;
+} 
 .sobre-nosotros {
   position: relative;
   max-width: 80rem;
@@ -169,5 +171,5 @@
   background-color: #c8cb8d;
 }
 .bg-color{
-  background-image: url("../Assets/img_index/hojas.png");
+  background-image: url("../Assets/hojas.jpg");
 }

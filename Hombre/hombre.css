@@ -1,11 +1,7 @@
-body{
-    background-color: #f5f3e6;
-  }
-  
-  .general-container {
-    background-color: #f5f3e6;
-  }
-    
+.color-nav{
+  background-color: #76cc2b;
+} 
+
   .mujer {
     position: relative;
     max-width: 80rem;
@@ -21,5 +17,5 @@ body{
   }
   
   .bg-color{
-      background-image: url("../Assets/img_index/hojas.png");
+    background-image: url("../Assets/hojas.jpg");
   }

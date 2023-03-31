@@ -10,7 +10,9 @@ body{
     padding: 0 1.5em;
 
 }
-
+.color-nav{
+    background-color: #76cc2b;
+  } 
 .content {
     max-width: 1190px;
     margin-left: auto;
@@ -36,7 +38,7 @@ body{
 }
 
 .contact-form{
-    background: #f5f3e6;
+    background: #f7fee9;
 }
 
 /* Separar form en 2  */ 
@@ -70,7 +72,7 @@ body{
 
 .contact-form form button {
     background-color:#fb5a00;
-    color: #000;
+    color: #fffefe;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -89,7 +91,7 @@ body{
 }
 
 .contact-info{
-    background: #ffffff;
+    background: #f7fee9;
 }
 
 .contact-info h4,
@@ -139,3 +141,7 @@ body{
 #mail{
     opacity: 0;
 }
+
+.bg-color{
+    background-image: url("../Assets/hojas.jpg");
+  }
