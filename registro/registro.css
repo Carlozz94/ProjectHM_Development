@@ -1,12 +1,14 @@
+body {
+  background-color: #f5f3e6 !important;
+}
 main {
-  background-color: #f5f3e6;
   text-align: center;
   height: 100vh;
+
   padding-top: 5em;
 }
 
 #separador {
-  background-color: #f5f3e6;
   height: 100vh;
 }
 
@@ -49,4 +51,9 @@ main {
   font-size: 3em;
   min-height: 6em;
   margin-top: 2em;
+}
+
+#informacionUsusario {
+  padding-top: 3em;
+  line-height: 3em;
 }
