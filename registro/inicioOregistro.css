@@ -1,27 +1,38 @@
-.login {
-  max-width: 400px;
-  padding: 30px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+body {
+  background-color: #f5f3e6;
 }
 
-.login button[type="submit"] {
+main {
+  text-align: center;
+  height: 100vh;
+  margin-top: 5em;
+}
+
+#imagenForm {
+  max-width: 100%;
+  max-height: 40em;
+}
+
+#tituloMain {
+  margin-top: 2em;
+}
+
+.contBoton {
+  display: flex;
+  justify-content: center;
+}
+
+.botonMain {
+  background-color: #1ebd53;
+  border-radius: 5em;
+  margin-bottom: 2em;
+  margin-top: 2em;
   display: block;
-  width: 100%;
-  background-color: #0066cc;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
+  min-width: 20em;
+  min-height: 3em;
+  border-style: ridge;
 }
 
-.login button[type="submit"]:hover {
-  background-color: #0052cc;
-}
-
-.botonContenido {
-  padding: 0.5em 5em 0.5em 5em;
+#terminos {
+  margin-top: 4em;
 }

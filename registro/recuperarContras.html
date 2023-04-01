@@ -103,36 +103,37 @@
     <!--****************************Main***********************************-->
 
     <main>
-      <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 justify-content-center">
-            <div class="card">
-              <div class="card-header text-center">Recuperar contraseña</div>
-              <div class="card-body">
-                <form id="recuperar">
-                  <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Introduce tu correo electrónico"
-                    />
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">
-                    Recuperar
-                  </button>
-                  <div><a href="">Terminos de uso</a></div>
-                </form>
-                <div class="p-5 m-5"></div>
-              </div>
-            </div>
-            <div class="p-5 m-5"></div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div id="imagenPrincipal">
+            <img src="./jeans.jpg" alt="jeans" id="imagenForm" />
           </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h2>Recuperar contraseña</h2>
+
+          <form id="recuperar">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Introduce tu correo electrónico"
+                required
+                autofocus
+              />
+            </div>
+            <div class="contBoton">
+              <button type="submit" class="botonMain">Recuperar</button>
+            </div>
+
+            <div id="terminos"><a href="">Terminos de uso</a></div>
+          </form>
         </div>
       </div>
     </main>
+    <div id="separador"></div>
 
     <!--**********************Footer******************-->
     <!--*********************Footer*****************-->

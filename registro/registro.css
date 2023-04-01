@@ -1,3 +1,19 @@
+main {
+  background-color: #f5f3e6;
+  text-align: center;
+  height: 100vh;
+  padding-top: 5em;
+}
+
+#separador {
+  background-color: #f5f3e6;
+  height: 100vh;
+}
+
+#imagenForm {
+  max-width: 100%;
+  max-height: 100em;
+}
 #registro {
   margin: 5em 0em 0em 0em;
   align-content: center;
@@ -8,10 +24,29 @@
   margin: 2em;
 }
 #terminos {
-  padding: 0em 11em 11em 11em;
+  margin-top: 2em;
+  min-width: none 20em;
 }
 
-img {
-  max-width: 40em;
-  max-height: 60em;
+.contBoton {
+  display: flex;
+  justify-content: center;
+}
+
+.botonMain {
+  background-color: #1ebd53;
+  border-radius: 5em;
+  margin-top: 2em;
+  display: block;
+  min-width: 20em;
+  min-height: 3em;
+  border-style: ridge;
+}
+
+#mensajeRecuperacion {
+  background-color: rgb(53, 168, 101);
+  color: aliceblue;
+  font-size: 3em;
+  min-height: 6em;
+  margin-top: 2em;
 }
