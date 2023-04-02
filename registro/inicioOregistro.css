@@ -1,5 +1,6 @@
 body {
   background-color: #f5f3e6 !important;
+  cursor: url(../Assets/Cursor/hoja-verde.png),auto;
 }
 
 main {
@@ -23,14 +24,22 @@ main {
 }
 
 .botonMain {
-  background-color: #1ebd53;
+  /*background-color: #1ebd53;*/
+  background-color: #fb5a00;
+  color: #000;
   border-radius: 5em;
+  text-transform: uppercase;
   margin-bottom: 2em;
   margin-top: 2em;
   display: block;
   min-width: 20em;
   min-height: 3em;
-  border-style: ridge;
+  /*border-style: ridge;*/
+}
+
+button:hover{
+  background: #38b972;
+  color: #fff;
 }
 
 #terminos {

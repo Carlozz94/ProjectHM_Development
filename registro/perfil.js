@@ -13,3 +13,7 @@ document.querySelector("#emailUsuario").textContent =
 
 document.querySelector("#telefonoUsuario").textContent =
   perfilUsuario[usuario - 1].telefono;
+
+  function salirPerfil() {
+    location.href = "../index.html";
+  }

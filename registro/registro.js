@@ -1,4 +1,5 @@
 const registrarse = document.querySelector("#registroUsuarios");
+
 registrarse.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -10,6 +11,8 @@ registrarse.addEventListener("submit", (e) => {
 
   const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
+
+  
   const estaRegistrado = usuarios.find((usuarios) => usuarios.email === email);
 
   if (estaRegistrado) {

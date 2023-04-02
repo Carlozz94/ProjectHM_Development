@@ -13,7 +13,7 @@ iniciar.addEventListener("submit", (e) => {
   );
 
   if (!valido) {
-    return alert("Datos incorrectos");
+    return alert("El usuario no existe o ingreso datos incorrectos");
   }
   alert("Bienvenido");
 

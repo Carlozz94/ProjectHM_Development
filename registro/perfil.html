@@ -103,20 +103,32 @@
     <!--****************************Main***********************************-->
 
     <main class="container">
-      <h2>Mi cuenta</h2>
-      <div id="informacionUsusario">
-        <h4 class="card-title">Información Personal</h4>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div id="imagenPrincipal">
+            <img src="./assets/images/imagen_perfil.jpg" alt="perfil" id="imagenForm" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+        <h2>Mi cuenta</h2>
+        <div id="informacionUsusario">
+          <h4 class="card-title">Información Personal</h4>
 
-        <strong>Nombre:</strong>
-        <p id="nombreUsuario">Pedro</p>
-        <strong>Apellidos:</strong>
-        <p id="apellidoUsuario"></p>
-        <strong>Email:</strong>
-        <p id="emailUsuario"></p>
-        <strong>Teléfono:</strong>
-        <p id="telefonoUsuario"></p>
+          <strong>Nombre:</strong>
+          <p id="nombreUsuario">Pedro</p>
+          <strong>Apellidos:</strong>
+          <p id="apellidoUsuario"></p>
+          <strong>Email:</strong>
+          <p id="emailUsuario"></p>
+          <strong>Teléfono:</strong>
+          <p id="telefonoUsuario"></p>
+        </div>
+        <a href="">Terminos de uso</a>
+        <div id="opciones">
+          <button type="button" class="botonMain" id="botonsalirperfil" onclick="salirPerfil()">Salir del perfil</button>
+        </div>
       </div>
-      <a href="">Terminos de uso</a>
+    </div>
     </main>
     <div id="separador"></div>
 
