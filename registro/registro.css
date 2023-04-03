@@ -8,9 +8,14 @@ main {
   padding-top: 5em;
 }
 
-form h2{
-  text-align: center;
+form h2, #recuperapass {
+  text-align:center;
   text-transform: uppercase;
+}
+
+#mensajerecupera{
+  text-align:left;
+  
 }
 
 #separador {
@@ -77,9 +82,9 @@ button:hover{
 }
 
 #mensajeRecuperacion {
-  background-color: rgb(53, 168, 101);
-  color: aliceblue;
-  font-size: 3em;
+  /*background-color: rgb(53, 168, 101);*/
+  color: #000;
+  font-size: 1em;
   min-height: 6em;
   margin-top: 2em;
 }
