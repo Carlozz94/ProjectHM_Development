@@ -3,6 +3,11 @@ body {
   cursor: url(../Assets/Cursor/hoja-verde.png),auto;
 }
 
+.color-nav{
+  /*background-color: #76cc2b;*/
+  background-image: url("../Assets/hojas2.jpg");
+}
+
 main {
   text-align: center;
   height: 100vh;
