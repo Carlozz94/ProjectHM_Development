@@ -1,7 +1,10 @@
 .imagen{
     max-width:100%;
 }
-
+.color-nav{
+    /*background-color: #76cc2b;*/
+    background-image: url("../Assets/hojas2.jpg");
+  } 
 a{
     cursor:pointer;
 }

@@ -40,3 +40,9 @@
 .botonContenido {
   padding: 0.5em 5em 0.5em 5em;
 }
+.color-nav{
+  background-color: #76cc2b;
+}
+.bg-color{
+  background-image: url("../Assets/hojas.jpg");
+} 

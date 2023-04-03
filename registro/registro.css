@@ -16,3 +16,9 @@ img {
   max-width: 40em;
   max-height: 60em;
 }
+.color-nav{
+  background-color: #76cc2b;
+}
+.bg-color{
+  background-image: url("../Assets/hojas.jpg");
+} 
