@@ -423,60 +423,32 @@ function procesarPedido() {
 }
 
  function enviarCompra(e){
-   e.preventDefault()
-   const cliente = document.querySelector('#cliente').value
-   const email = document.querySelector('#correo').value
-
-   if(email === '' || cliente == ''){
-     Swal.fire({
-       title: "¡Debes completar tu email y nombre!",
-       text: "Rellena el formulario",
-       icon: "error",
-       confirmButtonText: "Aceptar",
-   })
- } else {
+   e.preventDefault();
 
   const btn = document.getElementById('button');
-
-// document.getElementById('procesar-pago')
-//  .addEventListener('submit', function(event) {
-//    event.preventDefault();
 
    btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_qxwi0jn';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Finalizar compra';
-      alert('Correo enviado!');
-    }, (err) => {
-      btn.value = 'Finalizar compra';
-      alert(JSON.stringify(err));
-    });
     
-   const spinner = document.querySelector('#spinner')
-   spinner.classList.add('d-flex')
-   spinner.classList.remove('d-none')
+   const spinner = document.querySelector('#spinner');
+   spinner.classList.add('d-flex');
+   spinner.classList.remove('d-none');
 
    setTimeout(() => {
-     spinner.classList.remove('d-flex')
-     spinner.classList.add('d-none')
-     formulario.reset()
+     spinner.classList.remove('d-flex');
+     spinner.classList.add('d-none');
+     formulario.reset();
 
-     const alertExito = document.createElement('p')
-     alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
-     alertExito.textContent = 'Compra realizada correctamente'
-     formulario.appendChild(alertExito)
+     const alertExito = document.createElement('p');
+     alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success');
+     alertExito.textContent = 'Compra realizada correctamente';
+     formulario.appendChild(alertExito);
 
      setTimeout(() => {
-       alertExito.remove()
+       alertExito.remove();
      }, 3000)
-
-
    }, 3000)
- }
- localStorage.clear()
-
+ localStorage.clear();
  }
