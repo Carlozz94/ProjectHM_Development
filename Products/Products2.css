@@ -1,9 +1,9 @@
+.general_container {
+    background-color: #f9ffda;
+    font-family: "Raleway", sans-serif;
+  }
 .color-nav{
-  background-image: url("../Assets/hojas2.jpg");
-}
-
-.container {
-  background-color: #f9ffda;
+  background-color: #76cc2b;
 }
 .sobre-nosotros {
     position: relative;

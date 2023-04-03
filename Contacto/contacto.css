@@ -11,7 +11,7 @@ body{
 
 }
 .color-nav{
-    background-color: #76cc2b;
+    background-image: url("../Assets/hojas2.jpg");
   } 
 .content {
     max-width: 1190px;
@@ -114,7 +114,7 @@ body{
 
 @media (min-width:  700px){
     body{
-        padding: 0 4rem;
+        padding: 0;
     }
     
     .contact-wrapper{
