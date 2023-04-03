@@ -13,9 +13,10 @@ iniciar.addEventListener("submit", (e) => {
   );
 
   if (!valido) {
-    return alert("El usuario no existe o ingreso datos incorrectos");
+    return toastr.error("Datos incorrectos");
   }
-  alert("Bienvenido");
+  //jesus indica que se omita por ahora lo siguiente
+  //alert("Bienvenido");
 
   window.location.href = "./perfil.html";
 });

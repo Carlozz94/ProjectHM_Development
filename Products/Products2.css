@@ -1,0 +1,70 @@
+.general_container {
+    background-color: #f9ffda;
+    font-family: "Raleway", sans-serif;
+  }
+.color-nav{
+  background-color: #76cc2b;
+}
+.sobre-nosotros {
+    position: relative;
+    max-width: 100rem;
+    margin: auto;
+    margin-top: 15rem;
+  }
+
+ .title1{
+    margin-bottom: 6.5rem;
+    font-family: "Raleway", sans-serif;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+ } 
+ .video{
+    margin-bottom: 10em;
+    font-family: "Raleway", sans-serif;
+    font-size:xx-large;
+ }
+
+ .barraEnvios {
+    position:relative;
+    margin: auto; 
+    text-align: center;
+    background-color: #fb5a00;
+    color:#f5f3e6;
+    max-width: 81rem;
+  }
+  
+ .carrusel{
+    position:relative;
+    margin: auto; 
+    max-width: 81rem;
+ }
+  
+
+body{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+a{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+button{
+    cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+}
+video{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+
+.bg-color{
+    background-image: url("./Assets/hojas.jpg");
+}

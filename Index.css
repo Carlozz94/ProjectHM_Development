@@ -1,12 +1,9 @@
-.container{
-  background-color: #f9ffda;
-}
-.general_container {
-    background-color: #f9ffda;
-    font-family: "Raleway", sans-serif;
-  }
 .color-nav{
-  background-color: #76cc2b;
+  background-image: url("../Assets/hojas2.jpg");
+}
+
+.container {
+  background-color: #f9ffda;
 }
 .sobre-nosotros {
     position: relative;
@@ -14,6 +11,10 @@
     margin: auto;
     margin-top: 15rem;
   }
+
+#letras{
+  color: #fb5a00;
+}
 
  .title1{
     margin-bottom: 6.5rem;
