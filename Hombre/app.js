@@ -1,88 +1,100 @@
-const stockProductosMujer= [
+const stockProductosHombre= [ /* CAMISAS*/
     {
       id: 1,
       nombre: "Camisa Azul",
-      cantidad: '',
+      cantidad: 1,
       desc: "Casual",
       precio: 800,
       img: "../Assets/Hombre/CamisaAzul.jpg",
     },
     {
       id: 2,
-      nombre: "Playera Blanca",
-      cantidad: '',
-      desc: "Casual",
-      precio: 999,
-      img: "../Assets/Hombre/PlayeraBlanca.jpg",
-    },
-    {
-      id: 3,
-      nombre: "Sudadera Verde",
-      cantidad: '',
-      desc: "Casual",
-      precio: 1399,
-      img: "../Assets/Hombre/SudaderaVerde.jpg",
-    },
-    {
-      id: 4,
       nombre: "Camisa de cuadros roja",
-      cantidad: '',
+      cantidad: 1,
       desc: "Casual",
       precio: 799,
       img: "../Assets/Hombre/CamisaCuadrosRoja.jpg",
     },
     {
-      id: 5,
+      id: 3,
+      nombre: "Camisa azul claro",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 1200,
+      img: "../Assets/Hombre/CamisaAzulClaro.jpg",
+    }
+  ];
+
+  const stockProductosHombrePantalones= [ /*pantalones*/
+  {
+      id: 4,
       nombre: "Pantalon de mezclilla azul",
       cantidad: 1,
-      desc: "Formal",
+      desc: "Casual",
       precio: 1199,
       img: "../Assets/Hombre/PantalonMezclillaAzul.jpg",
     },
     {
-      id: 6,
-      nombre: "Camisa azul claro",
-      cantidad: '',
-      desc: "Casual",
-      precio: 1200,
-      img: "../Assets/Hombre/CamisaAzulClaro.jpg",
-    },
-    {
-      id: 7,
+      id: 5,
       nombre: "Pantalon Blanco",
-      cantidad: '',
-      desc: "Verano",
+      cantidad: 1,
+      desc: "Semi Formal",
       precio: 1399,
       img: "../Assets/Hombre/PantalonBlanco.jpg",
     },
     {
-      id: 8,
+      id: 6,
       nombre: "Pantalon Marron",
       cantidad: 1,
-      desc: "Spring",
+      desc: "Casual",
       precio: 699,
       img: "../Assets/Hombre/PantalonMarron.jpg",
-    },
-    {
-      id: 9,
+    }
+];
+
+const stockProductosHombreSacos= [ /*sacos*/  
+{
+      id: 7,
       nombre: "Saco Marron",
-      cantidad: '',
-      desc: 'Casual',
+      cantidad: 1,
+      desc: 'Semi Formal',
       precio: 1299,
       img: "../Assets/Hombre/SacoMarron.jpg",
     },
     {
-      id: 10,
+      id: 8,
       nombre: "Saco Cuadros",
-      cantidad: '',
-      desc: "Casual",
+      cantidad: 1,
+      desc: "Semi formal",
       precio: 999,
       img: "../Assets/Hombre/SacoCuadros.jpg",
+    }
+];
+
+  const stockProductosHombreMas= [ /* y mas*/
+  {
+      id: 9,
+      nombre: "Playera Blanca",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 999,
+      img: "../Assets/Hombre/PlayeraBlanca.jpg",
     },
-  ];
+    {
+      id: 10,
+      nombre: "Sudadera Verde",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 1399,
+      img: "../Assets/Hombre/SudaderaVerde.jpg",
+    }
+];
   let carrito = [];
   
   const contenedor = document.querySelector("#contenedor");
+  const contenedorPAN = document.querySelector('#contenedorPAN');
+  const contenedorSA = document.querySelector('#contenedorSA');
+  const contenedorMAS = document.querySelector('#contenedorMAS');
   const carritoContenedor = document.querySelector("#carritoContenedor");
   const vaciarCarrito = document.querySelector("#vaciarCarrito");
   const precioTotal = document.querySelector("#precioTotal");
@@ -123,12 +135,12 @@ const stockProductosMujer= [
           confirmButtonText: "Aceptar",
         });
       } else {
-        location.href = "hombre.html";
+        location.href = "compraM.html";
       }
     });
   }
   
-  stockProductosMujer.forEach((prod) => {
+  stockProductosHombre.forEach((prod) => {
     const { id, nombre, precio, desc, img, cantidad } = prod;
     if (contenedor) {
       contenedor.innerHTML += `
@@ -145,8 +157,66 @@ const stockProductosMujer= [
       `;
     }
   });
+
+  stockProductosHombrePantalones.forEach((prod) => {
+    const { id, nombre, precio, desc, img, cantidad } = prod;
+    if (contenedorPAN) {
+      contenedorPAN.innerHTML += `
+      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${nombre}</h5>
+        <p class="card-text">Precio: ${precio}</p>
+        <p class="card-text">Descripcion: ${desc}</p>
+        <p class="card-text">Cantidad: ${cantidad}</p>
+        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      </div>
+    </div>
+      `;
+    }
+  });
+
+  stockProductosHombreSacos.forEach((prod) => {
+    const { id, nombre, precio, desc, img, cantidad } = prod;
+    if (contenedorSA) {
+      contenedorSA.innerHTML += `
+      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${nombre}</h5>
+        <p class="card-text">Precio: ${precio}</p>
+        <p class="card-text">Descripcion: ${desc}</p>
+        <p class="card-text">Cantidad: ${cantidad}</p>
+        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      </div>
+    </div>
+      `;
+    }
+  });
+
+  stockProductosHombreMas.forEach((prod) => {
+    const { id, nombre, precio, desc, img, cantidad } = prod;
+    if (contenedorMAS) {
+      contenedorMAS.innerHTML += `
+      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${nombre}</h5>
+        <p class="card-text">Precio: ${precio}</p>
+        <p class="card-text">Descripcion: ${desc}</p>
+        <p class="card-text">Cantidad: ${cantidad}</p>
+        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      </div>
+    </div>
+      `;
+    }
+  });
   
   const agregarProducto = (id) => {
+    let sum1 = stockProductosHombrePantalones.length + stockProductosHombre.length;
+    let sum2 = sum1 + stockProductosHombreSacos.length;
+    let sum3 = sum2 + stockProductosHombreMas.length;
+
     const existe = carrito.some(prod => prod.id === id)
   
     if(existe){
@@ -155,10 +225,22 @@ const stockProductosMujer= [
           prod.cantidad++
         }
       })
-    } else {
-      const item = stockProductos.find((prod) => prod.id === id)
+    } else if(id > 0 && id <= stockProductosHombre.length){
+      const item = stockProductosHombre.find((prod) => prod.id === id)
       carrito.push(item)
     }
+    else if(id > stockProductosHombre.length && id <= sum1){
+    const item = stockProductosHombrePantalones.find((prod) => prod.id === id)
+    carrito.push(item)
+  }
+  else if(id > sum1 && id <= sum2){
+    const item = stockProductosHombreSacos.find((prod) => prod.id === id)
+    carrito.push(item)
+  }
+  else if(id > sum2 && id <= sum3){
+    const item = stockProductosHombreMas.find((prod) => prod.id === id)
+    carrito.push(item)
+  }
     mostrarCarrito()
   
   };
