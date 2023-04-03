@@ -194,9 +194,6 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarCarrito();
   document.querySelector("#activarFuncion").click(procesarPedido);
 });
-if(formulario){
-  formulario.addEventListener('submit', enviarCompra)
-}
 
 if (vaciarCarrito) {
   vaciarCarrito.addEventListener("click", () => {
@@ -421,6 +418,16 @@ function procesarPedido() {
     0
   );
 }
+
+const btn = document.getElementById('btnFinCompra');
+btn.addEventListener("click", e =>{
+  btn.value = 'Enviando...';
+  setTimeout(() => {
+    alert("Compra exitosa");
+    localStorage.removeItem("carrito");
+
+  }, 1000);
+});
 
  function enviarCompra(e){
    e.preventDefault();
