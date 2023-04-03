@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: #f9ffda;">
+  <body>
     <!--**************************Header***************************-->
     <header >
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -101,71 +101,52 @@
     </header>
 
     <!--****************************Main***********************************-->
-    <div class="container">
-      <br>
-      <br>
-      <br>
-    </div>
 
-    <main>
-    
-    <!--card-->
-    <div class="container" id="inicia">
-      <div class="col-md">
-      <div class="card mb-6" style="max-width: 1280px;" >
-        <!--style="max-width: 1280px;"-->
-        <div class="row no-gutters">
-          <div class="col-sm-6">
-            <img src="assets/images/ropa_naturaleza.jpg" alt="imagen_naturaleza">
-          </div>
-          <div class="col-sm-6">
-            <div class="card-body">
-              <center> <h2 class="card-title">INICIA SESIÓN</h2></center>
-                <br>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <form id="inicio">
-                          <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              placeholder="Introduce tu correo electrónico"
-                              autofocus
-                              required
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label for="password">Contraseña</label>
-                            <input type="contrasena" class="form-control" id="password" placeholder="Introduce tu contraseña" required />
-                          </div>
-                          <button  type="submit" class="btn btn-primary">
-                            Iniciar sesión
-                          </button>
-                          <div>
-                            <a href="">Olvide mi contraseña</a>
-                          </div>
-                        </form>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-            </div>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div id="imagenPrincipal">
+            <img src="./jeans.jpg" alt="jeans" id="imagenForm" />
           </div>
         </div>
-      </div>
-    </div>
-    </div>
-    </main>
+        <div class="col-12 col-lg-6">
+          <div id="tituloMain">
+            <h2>Inicio de Sesion</h2>
+          </div>
 
-    <div>
-      <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br>
-    </div>
+          <form id="inicio">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Introduce tu correo electrónico"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="contrasena"
+                placeholder="Introduce tu contraseña"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="contBoton">
+              <button type="submit" class="botonMain">Iniciar sesión</button>
+            </div>
+
+            <div id="terminos">
+              <a href="./recuperarContras.html">Olvide mi contraseña</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div id="separador"></div>
 
     <!--**********************Footer******************-->
     <!--*********************Footer*****************-->

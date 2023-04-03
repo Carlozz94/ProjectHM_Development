@@ -11,20 +11,33 @@
     <link rel="stylesheet" href="./inicioOregistro.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="form-login">
-        <h2>Recuperacion de contraseña</h2>
-        <div>
-          <p>
-            ¡Hola!. En breve te llegará un correo para la recuperación de tu
-            contraseña.
-          </p>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div id="imagenPrincipal">
+            <img src="./jeans.jpg" alt="jeans" id="imagenForm" />
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div id="mensajeRecuperacion">
+            <h2>SOLICITUD REALIZADA CON EXITO</h2>
+            <p>Se ha recibido correctamente la solicitud para recuperar la contraseña.</p>
+            <p>En breve recibirás un correo con las instrucciones a seguir para terminar el proceso.</p>
+            </p>
+          </div>
+          <div class="contBoton">
+            <button type="submit" class="botonMain" onclick="redireccionIniciarSesion()">ACEPTAR</button>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+    <div id="separador"></div>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./logon.js"></script>
   </body>
 </html>
