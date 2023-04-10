@@ -1,0 +1,31 @@
+.botonMain {
+    background-color: #38b972;
+    /*background-color: #fb5a00;*/
+    color: #fffefe;
+    /*border-radius: 5em;*/
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: block;
+    min-width: 20em;
+    min-height: 3em;
+    /*border-style: ridge;*/
+  }
+
+  .botonMainEliminar {
+    /*background-color: #38b972;*/
+    background-color: #fb5a00;
+    color: #fffefe;
+    /*border-radius: 5em;*/
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: block;
+    min-width: 20em;
+    min-height: 3em;
+    /*border-style: ridge;*/
+  }
+
+  #resumenCompra{
+    background: #f7fee9;
+  }

@@ -145,15 +145,15 @@ const stockProductosHombreSacos= [ /*sacos*/
     if (contenedor) {
       contenedor.innerHTML += `
       <div class="card mt-3" style="width: 22rem; margin:auto;">
-      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <p class="card-text">Precio: ${precio}</p>
-        <p class="card-text">Descripcion: ${desc}</p>
-        <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">${nombre}</h5>
+          <p class="card-text">Precio: ${precio}</p>
+          <p class="card-text">Descripcion: ${desc}</p>
+          <p class="card-text">Cantidad: ${cantidad}</p>
+          <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
+        </div>
       </div>
-    </div>
       `;
     }
   });
@@ -169,12 +169,16 @@ const stockProductosHombreSacos= [ /*sacos*/
         <p class="card-text">Precio: ${precio}</p>
         <p class="card-text">Descripcion: ${desc}</p>
         <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
       </div>
     </div>
       `;
     }
   });
+  /* CLASE DEFAULT DE LOS BOTONES ANTES DE CAMBIO GJC
+  ubicacion: estamos en pantalones hombre
+    class="btn btn-primary"
+  */
 
   stockProductosHombreSacos.forEach((prod) => {
     const { id, nombre, precio, desc, img, cantidad } = prod;
@@ -187,7 +191,7 @@ const stockProductosHombreSacos= [ /*sacos*/
         <p class="card-text">Precio: ${precio}</p>
         <p class="card-text">Descripcion: ${desc}</p>
         <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
       </div>
     </div>
       `;
@@ -205,7 +209,7 @@ const stockProductosHombreSacos= [ /*sacos*/
         <p class="card-text">Precio: ${precio}</p>
         <p class="card-text">Descripcion: ${desc}</p>
         <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
       </div>
     </div>
       `;
@@ -261,7 +265,7 @@ const stockProductosHombreSacos= [ /*sacos*/
           <p>Producto: ${nombre}</p>
         <p>Precio: ${precio}</p>
         <p>Cantidad :${cantidad}</p>
-        <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+        <button class="botonMainEliminar"  onclick="eliminarProducto(${id})">Eliminar producto</button>
           </div>
         </div> 
     

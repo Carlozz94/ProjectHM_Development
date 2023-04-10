@@ -228,7 +228,7 @@ stockProductosMujer.forEach((prod) => {
       <p class="card-text">Precio: $${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
@@ -246,7 +246,7 @@ stockProductosMujerPlayeras.forEach((prod) => {
       <p class="card-text">Precio: $${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
@@ -264,7 +264,7 @@ stockProductosMujerPantalones.forEach((prod) => {
       <p class="card-text">Precio: $${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
@@ -282,7 +282,7 @@ stockProductosMujerVestidos.forEach((prod) => {
       <p class="card-text">Precio: $${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
@@ -300,7 +300,7 @@ stockProductosMujerSueteres.forEach((prod) => {
       <p class="card-text">Precio: $${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="btn btn-primary" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
@@ -359,7 +359,7 @@ const mostrarCarrito = () => {
         <p>Producto: ${nombre}</p>
       <p>Precio: $${precio}</p>
       <p>Cantidad :${cantidad}</p>
-      <button class="btn btn-danger"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+      <button class="botonMainEliminar"  onclick="eliminarProducto(${id})">Eliminar producto</button>
         </div>
       </div> 
       `;
