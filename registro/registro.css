@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f3e6 !important;
+  background-color: #f9ffda !important;
 }
 main {
   /*text-align: center;*/
@@ -20,6 +20,10 @@ main {
 form h2, #recuperapass {
   text-align:center;
   text-transform: uppercase;
+}
+
+#iniciaS, #recuperapass, #informacionPerfil, #formRegistro{
+  background: #f7fee9;
 }
 
 #mensajerecupera{
@@ -46,6 +50,11 @@ form h2, #recuperapass {
   text-transform: uppercase;
 }
 
+#informacionPerfil h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .form-group {
   margin: 2em;
 }
@@ -63,8 +72,8 @@ form h2, #recuperapass {
 .botonMain {
   /*background-color: #1ebd53;*/
   background-color: #fb5a00;
-  color: #000;
-  border-radius: 5em;
+  color: #fffefe;
+  /*border-radius: 5em;*/
   text-transform: uppercase;
   margin-top: 2em;
   display: block;
@@ -83,6 +92,7 @@ button:hover{
   border-bottom: 1px solid #6ddf0f;
   background-color: #f5f3e6;
   border-radius: 0;
+  background: none;
   
 }
 

@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f3e6 !important;
+  background-color: #f9ffda !important;
   cursor: url(../Assets/Cursor/hoja-verde.png),auto;
 }
 
@@ -12,6 +12,11 @@ main {
   text-align: center;
   height: 100vh;
   margin-top: 5em;
+  
+}
+
+#iniciaORegistra, #confirmacionRecuperacion{
+  background: #f7fee9;
 }
 
 #imagenForm {
@@ -31,8 +36,8 @@ main {
 .botonMain {
   /*background-color: #1ebd53;*/
   background-color: #fb5a00;
-  color: #000;
-  border-radius: 5em;
+  color: #fffefe;
+  /*border-radius: 5em;*/
   text-transform: uppercase;
   margin-bottom: 2em;
   margin-top: 2em;
