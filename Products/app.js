@@ -3,12 +3,12 @@ $(document).ready(function(){
        "columnDefs":[{
         "targets": -1,
         "data":null,
-        "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-primary btnEditar'>Editar</button><button class='btn btn-danger btnBorrar'>Borrar</button></div></div>"  
+        "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-success btnEditar'>Editar</button><button class='btn btn-danger btnBorrar'>Borrar</button></div></div>"  
        }],
         
         //Para cambiar el lenguaje a español
     "language": {
-            "lengthMenu": "Mostrar _MENU_ registros",
+            "lengthMenu": "Mostrar  _MENU_  registros",
             "zeroRecords": "No se encontraron resultados",
             "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
             "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
@@ -23,6 +23,9 @@ $(document).ready(function(){
              "sProcessing":"Procesando...",
         }
     });
+
+    $(".btnEditar").css("background-color", "#38b972");
+
     
 $("#btnNuevo").click(function(){
     $("#formProductos").trigger("reset");
@@ -46,8 +49,10 @@ $(document).on("click", ".btnEditar", function(){
     $("#nombre").val(nombre);
     $("#descripcion").val(descripcion);
     opcion = 2; //editar
+
     
-    $(".modal-header").css("background-color", "#007bff");
+    
+    $(".modal-header").css("background-color", "#38b972");
     $(".modal-header").css("color", "white");
     $(".modal-title").text("Editar Producto");            
     $("#modalCRUD").modal("show");  
