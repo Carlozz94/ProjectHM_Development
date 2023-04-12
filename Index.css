@@ -1,5 +1,5 @@
 .color-nav {
-  background-image: url("../Assets/hojas2.jpg");
+  background-image: url("./Assets/hojas2.jpg");
   font-size: larger;
 }
 
@@ -58,13 +58,13 @@
 }
 
 body {
-  cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+  cursor: url(./Assets/Cursor/hoja-verde.png), auto;
 }
 a {
-  cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+  cursor: url(./Assets/Cursor/hoja-verde.png), auto;
 }
 button {
-  cursor: url(../Assets/Cursor/hoja-verde.png), auto;
+  cursor: url(./Assets/Cursor/hoja-verde.png), auto;
 }
 video {
   position: absolute;

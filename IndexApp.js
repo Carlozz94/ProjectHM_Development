@@ -240,7 +240,7 @@ function enviarCompra(e) {
     //  .addEventListener('submit', function(event) {
     //    event.preventDefault();
 
-    btn.value = "Enviando..";
+    btn.value = "Enviando.";
 
     const serviceID = "default_service";
     const templateID = "template_qxwi0jn";
