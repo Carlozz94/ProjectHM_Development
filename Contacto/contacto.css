@@ -10,9 +10,12 @@ body{
     padding: 0 1.5em;
 
 }
-.color-nav{
+.color-nav {
     background-image: url("../Assets/hojas2.jpg");
-  } 
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:1.2rem;
+  }
 .content {
     max-width: 1190px;
     margin-left: auto;

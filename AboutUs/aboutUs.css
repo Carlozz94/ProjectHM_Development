@@ -1,9 +1,12 @@
 .general-container {
   background-color: #f9ffda;
 }
-.color-nav{
+.color-nav {
   background-image: url("../Assets/hojas2.jpg");
-} 
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.2rem;
+}
 .sobre-nosotros {
   position: relative;
   max-width: 80rem;
