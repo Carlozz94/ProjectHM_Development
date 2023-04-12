@@ -1,4 +1,4 @@
-const stockProductos= [
+const stockProductos = [
   {
     id: 1,
     nombre: "Blusa negra con tirantes",
@@ -63,7 +63,7 @@ const stockProductos= [
     precio: 699,
     img: "../Assets/Hombre/PantalonMarron.jpg",
   },
-] 
+];
 let carrito = [];
 
 const contenedor = document.querySelector("#contenedor");
@@ -73,7 +73,7 @@ const precioTotal = document.querySelector("#precioTotal");
 const activarFuncion = document.querySelector("#activarFuncion");
 const procesarCompra = document.querySelector("#procesarCompra");
 const totalProceso = document.querySelector("#totalProceso");
-const formulario = document.querySelector('#procesar-pago')
+const formulario = document.querySelector("#procesar-pago");
 
 if (activarFuncion) {
   activarFuncion.addEventListener("click", procesarPedido);
@@ -84,10 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarCarrito();
   document.querySelector("#activarFuncion").click(procesarPedido);
 });
-if(formulario){
-  formulario.addEventListener('submit', enviarCompra)
+if (formulario) {
+  formulario.addEventListener("submit", enviarCompra);
 }
-
 
 if (vaciarCarrito) {
   vaciarCarrito.addEventListener("click", () => {
@@ -122,29 +121,27 @@ stockProductos.forEach((prod) => {
       <p class="card-text">Precio: ${precio}</p>
       <p class="card-text">Descripcion: ${desc}</p>
       <p class="card-text">Cantidad: ${cantidad}</p>
-      <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
+      <button class="botonCardMain" onclick="agregarProducto(${id})">Comprar Producto</button>
     </div>
   </div>
     `;
   }
 });
 
-
 const agregarProducto = (id) => {
-  const existe = carrito.some(prod => prod.id === id)
+  const existe = carrito.some((prod) => prod.id === id);
 
-  if(existe){
-    const prod = carrito.map(prod => {
-      if(prod.id === id){
-        prod.cantidad++
+  if (existe) {
+    const prod = carrito.map((prod) => {
+      if (prod.id === id) {
+        prod.cantidad++;
       }
-    })
+    });
   } else {
-    const item = stockProductos.find((prod) => prod.id === id)
-    carrito.push(item)
+    const item = stockProductos.find((prod) => prod.id === id);
+    carrito.push(item);
   }
-  mostrarCarrito()
-
+  mostrarCarrito();
 };
 
 const mostrarCarrito = () => {
@@ -224,61 +221,67 @@ function procesarPedido() {
   );
 }
 
- function enviarCompra(e){
-   e.preventDefault()
-   const cliente = document.querySelector('#cliente').value
-   const email = document.querySelector('#correo').value
+function enviarCompra(e) {
+  e.preventDefault();
+  const cliente = document.querySelector("#cliente").value;
+  const email = document.querySelector("#correo").value;
 
-   if(email === '' || cliente == ''){
-     Swal.fire({
-       title: "¡Debes completar tu email y nombre!",
-       text: "Rellena el formulario",
-       icon: "error",
-       confirmButtonText: "Aceptar",
-   })
- } else {
-
-  const btn = document.getElementById('button');
-
-// document.getElementById('procesar-pago')
-//  .addEventListener('submit', function(event) {
-//    event.preventDefault();
-
-   btn.value = 'Enviando...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_qxwi0jn';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Finalizar compra';
-      alert('Correo enviado!');
-    }, (err) => {
-      btn.value = 'Finalizar compra';
-      alert(JSON.stringify(err));
+  if (email === "" || cliente == "") {
+    Swal.fire({
+      title: "¡Debes completar tu email y nombre!",
+      text: "Rellena el formulario",
+      icon: "error",
+      confirmButtonText: "Aceptar",
     });
-    
-   const spinner = document.querySelector('#spinner')
-   spinner.classList.add('d-flex')
-   spinner.classList.remove('d-none')
+  } else {
+    const btn = document.getElementById("button");
 
-   setTimeout(() => {
-     spinner.classList.remove('d-flex')
-     spinner.classList.add('d-none')
-     formulario.reset()
+    // document.getElementById('procesar-pago')
+    //  .addEventListener('submit', function(event) {
+    //    event.preventDefault();
 
-     const alertExito = document.createElement('p')
-     alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
-     alertExito.textContent = 'Compra realizada correctamente'
-     formulario.appendChild(alertExito)
+    btn.value = "Enviando...";
 
-     setTimeout(() => {
-       alertExito.remove()
-     }, 3000)
+    const serviceID = "default_service";
+    const templateID = "template_qxwi0jn";
 
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Finalizar compra";
+        alert("Correo enviado!");
+      },
+      (err) => {
+        btn.value = "Finalizar compra";
+        alert(JSON.stringify(err));
+      }
+    );
 
-   }, 3000)
- }
- localStorage.clear()
+    const spinner = document.querySelector("#spinner");
+    spinner.classList.add("d-flex");
+    spinner.classList.remove("d-none");
 
- }
+    setTimeout(() => {
+      spinner.classList.remove("d-flex");
+      spinner.classList.add("d-none");
+      formulario.reset();
+
+      const alertExito = document.createElement("p");
+      alertExito.classList.add(
+        "alert",
+        "alerta",
+        "d-block",
+        "text-center",
+        "col-12",
+        "mt-2",
+        "alert-success"
+      );
+      alertExito.textContent = "Compra realizada correctamente";
+      formulario.appendChild(alertExito);
+
+      setTimeout(() => {
+        alertExito.remove();
+      }, 3000);
+    }, 3000);
+  }
+  localStorage.clear();
+}
