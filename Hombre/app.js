@@ -1,11 +1,11 @@
 const stockProductosHombre= [ /* CAMISAS*/
     {
       id: 1,
-      nombre: "Camisa Azul",
+      nombre: "Camisa Blanca",
       cantidad: 1,
       desc: "Casual",
       precio: 800,
-      img: "../Assets/Hombre/CamisaAzul.jpg",
+      img: "../Assets/Hombre/CamisaBlanca.jpg",
     },
     {
       id: 2,
@@ -20,73 +20,120 @@ const stockProductosHombre= [ /* CAMISAS*/
       nombre: "Camisa azul claro",
       cantidad: 1,
       desc: "Casual",
-      precio: 1200,
+      precio: 999,
       img: "../Assets/Hombre/CamisaAzulClaro.jpg",
+    },
+    {
+      id: 4,
+      nombre: "Camisa de mezclilla",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 1200,
+      img: "../Assets/Hombre/CamisaMezclilla.jpg",
     }
   ];
 
   const stockProductosHombrePantalones= [ /*pantalones*/
   {
-      id: 4,
-      nombre: "Pantalon de mezclilla azul",
-      cantidad: 1,
-      desc: "Casual",
-      precio: 1199,
-      img: "../Assets/Hombre/PantalonMezclillaAzul.jpg",
-    },
-    {
       id: 5,
-      nombre: "Pantalon Blanco",
+      nombre: "Pantalon Gris de Vestir",
       cantidad: 1,
-      desc: "Semi Formal",
+      desc: "Formal",
       precio: 1399,
-      img: "../Assets/Hombre/PantalonBlanco.jpg",
+      img: "../Assets/Hombre/PantalonGris.jpg",
     },
     {
       id: 6,
+      nombre: "Pantalon Arena",
+      cantidad: 1,
+      desc: "Semi Formal",
+      precio: 1299,
+      img: "../Assets/Hombre/PantalonArena.jpg",
+    },
+    {
+      id: 7,
+      nombre: "Pantalon Negro",
+      cantidad: 1,
+      desc: "Semi Formal",
+      precio: 1299,
+      img: "../Assets/Hombre/PantalonNegro.jpg",
+    },
+    {
+      id: 8,
       nombre: "Pantalon Marron",
       cantidad: 1,
       desc: "Casual",
-      precio: 699,
+      precio: 999,
       img: "../Assets/Hombre/PantalonMarron.jpg",
     }
 ];
 
 const stockProductosHombreSacos= [ /*sacos*/  
 {
-      id: 7,
-      nombre: "Saco Marron",
-      cantidad: 1,
-      desc: 'Semi Formal',
-      precio: 1299,
-      img: "../Assets/Hombre/SacoMarron.jpg",
-    },
-    {
-      id: 8,
-      nombre: "Saco Cuadros",
-      cantidad: 1,
-      desc: "Semi formal",
-      precio: 999,
-      img: "../Assets/Hombre/SacoCuadros.jpg",
-    }
-];
-
-  const stockProductosHombreMas= [ /* y mas*/
-  {
       id: 9,
-      nombre: "Playera Blanca",
+      nombre: "Saco Rosa",
       cantidad: 1,
-      desc: "Casual",
-      precio: 999,
-      img: "../Assets/Hombre/PlayeraBlanca.jpg",
+      desc: 'Formal',
+      precio: 1199,
+      img: "../Assets/Hombre/SacoRosa.jpg",
     },
     {
       id: 10,
-      nombre: "Sudadera Verde",
+      nombre: "Saco Negro",
+      cantidad: 1,
+      desc: "Semi formal",
+      precio: 999,
+      img: "../Assets/Hombre/SacoNegro.jpg",
+    },
+    {
+      id: 11,
+      nombre: "Abrigo Negro",
+      cantidad: 1,
+      desc: "Semi formal",
+      precio: 1999,
+      img: "../Assets/Hombre/AbrigoNegro.jpg",
+    },
+    {
+      id: 12,
+      nombre: "Abrigo Café",
+      cantidad: 1,
+      desc: "Semi formal",
+      precio: 1999,
+      img: "../Assets/Hombre/AbrigoCafe.jpg",
+    }
+];
+
+  const stockProductosHombreMas= [ /* playeras y mas*/
+  {
+      id: 13,
+      nombre: "Playera Blanca",
       cantidad: 1,
       desc: "Casual",
-      precio: 1399,
-      img: "../Assets/Hombre/SudaderaVerde.jpg",
+      precio: 699,
+      img: "../Assets/Hombre/PlayeraBlanca.jpg",
+    },
+    {
+      id: 14,
+      nombre: "Playera Oversize",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 499,
+      img: "../Assets/Hombre/PlayeraOversize.jpg",
+    },{
+      id: 14,
+      nombre: "Chamarra Mezclilla Negra",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 499,
+      img: "../Assets/Hombre/ChamarraNegra.jpg",
+    },
+    {
+      id: 16,
+      nombre: "Chamarra mezclilla",
+      cantidad: 1,
+      desc: "Casual",
+      precio: 499,
+      img: "../Assets/Hombre/ChamarraMezclilla.jpg",
     }
 ];
   let carrito = [];
@@ -144,16 +191,16 @@ const stockProductosHombreSacos= [ /*sacos*/
     const { id, nombre, precio, desc, img, cantidad } = prod;
     if (contenedor) {
       contenedor.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;">
-        <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">${nombre}</h5>
-          <p class="card-text">Precio: ${precio}</p>
-          <p class="card-text">Descripcion: ${desc}</p>
-          <p class="card-text">Cantidad: ${cantidad}</p>
-          <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
-        </div>
+      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">${nombre}</h5>
+        <p class="card-text">Precio: ${precio}</p>
+        <p class="card-text">Descripcion: ${desc}</p>
+        <p class="card-text">Cantidad: ${cantidad}</p>
+        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
       </div>
+    </div>
       `;
     }
   });
@@ -162,7 +209,7 @@ const stockProductosHombreSacos= [ /*sacos*/
     const { id, nombre, precio, desc, img, cantidad } = prod;
     if (contenedorPAN) {
       contenedorPAN.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
       <img class="card-img-top my-2" src="${img}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">${nombre}</h5>
@@ -184,14 +231,14 @@ const stockProductosHombreSacos= [ /*sacos*/
     const { id, nombre, precio, desc, img, cantidad } = prod;
     if (contenedorSA) {
       contenedorSA.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
       <img class="card-img-top my-2" src="${img}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">${nombre}</h5>
         <p class="card-text">Precio: ${precio}</p>
         <p class="card-text">Descripcion: ${desc}</p>
         <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
+        <button class="botonMain" style="margin:auto" onclick="agregarProducto(${id})">Comprar Producto</button>
       </div>
     </div>
       `;
@@ -202,7 +249,7 @@ const stockProductosHombreSacos= [ /*sacos*/
     const { id, nombre, precio, desc, img, cantidad } = prod;
     if (contenedorMAS) {
       contenedorMAS.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;">
+      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
       <img class="card-img-top my-2" src="${img}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">${nombre}</h5>
