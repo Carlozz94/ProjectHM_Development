@@ -5,7 +5,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Estilo formal/casual",
     precio: "$399",
-    img: "../Assets/Mujer/Blusas/4.jpg",
+    img: "./Assets/Mujer/Blusas/4.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual/Trendy",
     precio: 699,
-    img: "../Assets/Mujer/Pantalones/3.jpg",
+    img: "./Assets/Mujer/Pantalones/3.jpg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Trendy/casual",
     precio: 999,
-    img: "../Assets/Mujer/Vestidos/4.jpg",
+    img: "./Assets/Mujer/Vestidos/4.jpg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual/Cómodo/Trendy",
     precio: 899,
-    img: "../Assets/Mujer/Sueteres/3.jpg",
+    img: "./Assets/Mujer/Sueteres/3.jpg",
   },
   {
     id: 5,
