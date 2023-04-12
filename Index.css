@@ -2,14 +2,33 @@
   background-image: url("../Assets/hojas2.jpg");
 }
 
+
 .container {
-  background-color: #f9ffda;
+  background-color: #f9ffdd;  
 }
 .sobre-nosotros {
   position: relative;
   max-width: 100rem;
   margin: auto;
   margin-top: 15rem;
+}
+
+.barraEnvios{
+  background-image: url("./Assets/img_index/flores.jpg");
+  border-radius: 1rem;
+  max-height: 12rem;
+  padding: 1rem;
+
+}
+
+.textoEnvio{
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: rgb(14, 149, 198) 2px 5px;
+  /*text-shadow: #6693b8 1px 0 10px;*/
 }
 
 #letras {
@@ -29,14 +48,7 @@
   font-size: xx-large;
 }
 
-.barraEnvios {
-  position: relative;
-  margin: auto;
-  text-align: center;
-  background-color: #fb5a00;
-  color: #f5f3e6;
-  max-width: 81rem;
-}
+
 
 .carrusel {
   position: relative;
