@@ -1,105 +1,66 @@
-$(document).ready(function(){
-    tablaPersonas = $("#tablaProductos").DataTable({
-       "columnDefs":[{
-        "targets": -1,
-        "data":null,
-        "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-success btnEditar'>Editar</button><button class='btn btn-danger btnBorrar'>Borrar</button></div></div>"  
-       }],
-        
-        //Para cambiar el lenguaje a español
-    "language": {
-            "lengthMenu": "Mostrar  _MENU_  registros",
-            "zeroRecords": "No se encontraron resultados",
-            "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "sSearch": "Buscar:",
-            "oPaginate": {
-                "sFirst": "Primero",
-                "sLast":"Último",
-                "sNext":"Siguiente",
-                "sPrevious": "Anterior"
-             },
-             "sProcessing":"Procesando...",
-        }
+/**************************   DATA  ************************/
+//Primero tenemos que obtener los elementos del documento HTML para trabajar con ellos
+
+console.log("Entre a la funcion");
+
+document.getElementById("btnSave").addEventListener("click", function(e){
+
+    let name = document.getElementById("name");
+    let price = document.getElementById("price");
+    let stock = document.getElementById("stock");
+    let description = document.getElementById("description");
+    let color = document.getElementById("color");
+    let size = document.getElementById("size");
+    let category = document.getElementById("category");
+    let image = document.getElementById("image");
+    let fk_idCategoryClothe = document.getElementById("fk_idCategoryClothe");
+    let fk_idAdmin = document.getElementById("fk_idAdmin");
+    
+    //Impresion en consola de estos datos a manera de test
+    console.log(name.value);
+    console.log(price.value);
+    console.log(stock.value);
+    console.log(description.value);
+    console.log(color.value);
+    console.log(size.value);
+    console.log(category.value);
+    console.log(image.value);
+    console.log(fk_idCategoryClothe.value);
+    console.log(fk_idAdmin.value);
+    
+    //Crear una constante llamada datos para guardar la informacion y pasarla como un cuerpo de solicitud cuando lo necesite (los campos deben coincidir como los tengo declarados en mi modelo (objeto de JAVA))
+    
+    const datos = {
+        name: name.value,
+        price: price.value,
+        stock: stock.value,
+        description: description.value,
+        color: color.value,
+        size: size.value,
+        category: category.value,
+        image: image.value,
+        fk_idCategoryClothe:fk_idCategoryClothe.value,
+        fk_idAdmin:fk_idAdmin.value,
+    };
+    
+//Fetch a la URL de mi API (el RequestMapping del Controller)
+    
+fetch ("http://localhost:8080/wm/product/", { //hago la conexion a la URL
+    
+//Especifico el tipo de solicitud que manejare
+method: "POST",
+headers: {
+    "Content-Type" : "application/json",
+},
+body: JSON.stringify(datos), //Pasamos la constante definida anteriormente como cuerpo de la solicitud
+})
+
+.then((response) => response.text())
+.then((data)=>{
+    console.log("Producto guardado correctamente", data);
+})
+.catch((error)=>{
+    console.log("No pudimos guardar el producto", error);
+});
+
     });
-
-    $(".btnEditar").css("background-color", "#38b972");
-
-    
-$("#btnNuevo").click(function(){
-    $("#formProductos").trigger("reset");
-    $(".modal-header").css("background-color", "#28a745");
-    $(".modal-header").css("color", "white");
-    $(".modal-title").text("Nueva Producto");            
-    $("#modalCRUD").modal("show");        
-    id=null;
-    opcion = 1; //alta
-});    
-    
-var fila; //capturar la fila para editar o borrar el registro
-    
-//botón EDITAR    
-$(document).on("click", ".btnEditar", function(){
-    fila = $(this).closest("tr");
-    nombre = fila.find(fila.find('td:eq(0)').text());
-    precio = parseInt(fila.find('td:eq(0)').text());
-    descripcion = fila.find('td:eq(2)').text();
-    
-    $("#nombre").val(nombre);
-    $("#descripcion").val(descripcion);
-    opcion = 2; //editar
-
-    
-    
-    $(".modal-header").css("background-color", "#38b972");
-    $(".modal-header").css("color", "white");
-    $(".modal-title").text("Editar Producto");            
-    $("#modalCRUD").modal("show");  
-    
-});
-
-//botón BORRAR
-$(document).on("click", ".btnBorrar", function(){    
-    fila = $(this);
-    id = parseInt($(this).closest("tr").find('td:eq(0)').text());
-    opcion = 3 //borrar
-    var respuesta = confirm("¿Está seguro de eliminar el registro: "+id+"?");
-    if(respuesta){
-        $.ajax({
-            url: "",
-            type: "POST",
-            dataType: "json",
-            data: {opcion:opcion, id:id},
-            success: function(){
-                tablaPersonas.row(fila.parents('tr')).remove().draw();
-            }
-        });
-    }   
-});
-    
-$("#formProductos").submit(function(e){
-    e.preventDefault();    
-    nombre = $.trim($("#nombre").val());
-    descripcion = $.trim($("#descripcion").val());    
-    $.ajax({
-        url: "",
-        type: "POST",
-        dataType: "json",
-        data: {nombre:nombre, precio:precio, descripcion:descripcion, categoria:categoria, linkImg:linkImg, opcion:opcion},
-        success: function(data){
-            console.log(data);          
-            nombre = data[0].nombre;
-            precio = data[0].precio;
-            descripcion = data[0].descripcion;
-            categoria = data[0].categoria;
-            linkImg = data[0].linkImg;
-            if(opcion == 1){tablaProductos.row.add([nombre,precio,descripcion,categoria,linkImg]).draw();}
-            else{tablaProductos.row(fila).data([nombre,precio,descripcion,categoria,linkImg]).draw();}            
-        }        
-    });
-    $("#modalCRUD").modal("hide");    
-    
-});    
-    
-});

@@ -112,10 +112,13 @@
                         <thead class="text-center">
                             <tr>
                                 <th>Nombre</th>
-                                <th>Precio</th>                   
-                                <th>Descripción</th>  
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Descripción</th>    
+                                <th>Color</th>
+                                <th>Tamaño</th>                       
                                 <th>Categoria</th>
-                                <th>Link de la imagen</th>
+                                <th>Imagen</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -126,6 +129,9 @@
                                 <td></td>
                                 <th></th>
                                 <td></td>    
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -157,24 +163,48 @@
                   </div>
       
                   <div class="form-group">
-                    <label for="precio" class="form-label">Precio</label>
-                    <input type="text" class="form-control" id="precio" required>
+                    <label for="price" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="price" required>
                     <div class="invalid-feedback">
                         El producto necesita precio
                     </div>
                   </div>
-      
+
                   <div class="form-group">
-                    <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="descripcion" required></textarea>
+                    <label for="stock" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="stock" required>
                     <div class="invalid-feedback">
-                      El producto necesita una descripción
+                        El producto necesita cantidad
                     </div>
                   </div>
       
                   <div class="form-group">
-                    <label for="categoria" class="form-label">Categoría</label>
-                    <select class="form-select" id="categoria" required>
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="description" required></textarea>
+                    <div class="invalid-feedback">
+                      El producto necesita una descripción
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="color" class="form-label">Color</label>
+                    <textarea class="form-control" id="color" required></textarea>
+                    <div class="invalid-feedback">
+                      El producto necesita un color
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="size" class="form-label">Tamaño</label>
+                    <textarea class="form-control" id="size" required></textarea>
+                    <div class="invalid-feedback">
+                      El producto necesita un tamaño
+                    </div>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="category" class="form-label">Categoría</label>
+                    <select class="form-select" id="category" required>
                       <option value="">Seleccionar</option>
                       <option value="1">Hombre</option>
                       <option value="2">Mujer</option>
@@ -185,11 +215,26 @@
                   </div>
       
                   <div class="form-group">
-                    <label for="linkImg" class="form-label">Link de la imagen</label>
-                    <input type="text" class="form-control" id="linkImg" required>
+                    <label for="image" class="form-label">Link de la imagen</label>
+                    <input type="text" class="form-control" id="image" required>
                     <div class="invalid-feedback">
                       El producto necesita una imagen
-                    </div>          
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="fk_idCategoryClothe" class="form-label">Link de la imagen</label>
+                      <input type="text" class="form-control" id="fk_idCategoryClothe" required>
+                      <div class="invalid-feedback">
+                        El producto necesita una categoria de ropa definida
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="fk_idAdmin" class="form-label">Link de la imagen</label>
+                        <input type="text" class="form-control" id="fk_idAdmin" required>
+                        <div class="invalid-feedback">
+                          El producto necesita una foreign key del admin
+                        </div>      
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal" >Cancelar</button>
