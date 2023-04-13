@@ -6,7 +6,7 @@ const stockProductosHombre = [
     cantidad: 1,
     desc: "Casual",
     precio: 800,
-    img: "./Assets/Hombre/CamisaBlanca.jpg",
+    img: "../Assets/Hombre/CamisaBlanca.jpg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const stockProductosHombre = [
     cantidad: 1,
     desc: "Casual",
     precio: 799,
-    img: "./Assets/Hombre/CamisaCuadrosRoja.jpg",
+    img: "../Assets/Hombre/CamisaCuadrosRoja.jpg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const stockProductosHombre = [
     cantidad: 1,
     desc: "Casual",
     precio: 999,
-    img: "./Assets/Hombre/CamisaAzulClaro.jpg",
+    img: "../Assets/Hombre/CamisaAzulClaro.jpg",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const stockProductosHombre = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "./Assets/Hombre/CamisaMezclilla.jpg",
+    img: "../Assets/Hombre/CamisaMezclilla.jpg",
   },
 ];
 
@@ -42,7 +42,7 @@ const stockProductosHombrePantalones = [
     cantidad: 1,
     desc: "Formal",
     precio: 1399,
-    img: "./Assets/Hombre/PantalonGris.jpg",
+    img: "../Assets/Hombre/PantalonGris.jpg",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const stockProductosHombrePantalones = [
     cantidad: 1,
     desc: "Semi Formal",
     precio: 1299,
-    img: "./Assets/Hombre/PantalonArena.jpg",
+    img: "../Assets/Hombre/PantalonArena.jpg",
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const stockProductosHombrePantalones = [
     cantidad: 1,
     desc: "Semi Formal",
     precio: 1299,
-    img: "./Assets/Hombre/PantalonNegro.jpg",
+    img: "../Assets/Hombre/PantalonNegro.jpg",
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const stockProductosHombrePantalones = [
     cantidad: 1,
     desc: "Casual",
     precio: 999,
-    img: "./Assets/Hombre/PantalonMarron.jpg",
+    img: "../Assets/Hombre/PantalonMarron.jpg",
   },
 ];
 
@@ -78,7 +78,7 @@ const stockProductosHombreSacos = [
     cantidad: 1,
     desc: "Formal",
     precio: 1199,
-    img: "./Assets/Hombre/SacoRosa.jpg",
+    img: "../Assets/Hombre/SacoRosa.jpg",
   },
   {
     id: 10,
@@ -86,7 +86,7 @@ const stockProductosHombreSacos = [
     cantidad: 1,
     desc: "Semi formal",
     precio: 999,
-    img: "./Assets/Hombre/SacoNegro.jpg",
+    img: "../Assets/Hombre/SacoNegro.jpg",
   },
   {
     id: 11,
@@ -94,7 +94,7 @@ const stockProductosHombreSacos = [
     cantidad: 1,
     desc: "Semi formal",
     precio: 1999,
-    img: "./Assets/Hombre/AbrigoNegro.jpg",
+    img: "../Assets/Hombre/AbrigoNegro.jpg",
   },
   {
     id: 12,
@@ -102,7 +102,7 @@ const stockProductosHombreSacos = [
     cantidad: 1,
     desc: "Semi formal",
     precio: 1999,
-    img: "./Assets/Hombre/AbrigoCafe.jpg",
+    img: "../Assets/Hombre/AbrigoCafe.jpg",
   },
 ];
 
@@ -114,7 +114,7 @@ const stockProductosHombreMas = [
     cantidad: 1,
     desc: "Casual",
     precio: 699,
-    img: "./Assets/Hombre/PlayeraBlanca.jpg",
+    img: "../Assets/Hombre/PlayeraBlanca.jpg",
   },
   {
     id: 14,
@@ -122,7 +122,7 @@ const stockProductosHombreMas = [
     cantidad: 1,
     desc: "Casual",
     precio: 499,
-    img: "./Assets/Hombre/PlayeraOversize.jpg",
+    img: "../Assets/Hombre/PlayeraOversize.jpg",
   },
   {
     id: 14,
@@ -130,7 +130,7 @@ const stockProductosHombreMas = [
     cantidad: 1,
     desc: "Casual",
     precio: 499,
-    img: "./Assets/Hombre/ChamarraNegra.jpg",
+    img: "../Assets/Hombre/ChamarraNegra.jpg",
   },
   {
     id: 16,
@@ -138,7 +138,7 @@ const stockProductosHombreMas = [
     cantidad: 1,
     desc: "Casual",
     precio: 499,
-    img: "./Assets/Hombre/ChamarraMezclilla.jpg",
+    img: "../Assets/Hombre/ChamarraMezclilla.jpg",
   },
 ];
 let carrito = [];
@@ -393,7 +393,7 @@ function enviarCompra(e) {
     //  .addEventListener('submit', function(event) {
     //    event.preventDefault();
 
-    btn.value = "Enviando..";
+    btn.value = "Enviando...";
 
     const serviceID = "default_service";
     const templateID = "template_qxwi0jn";

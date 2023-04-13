@@ -15,5 +15,5 @@ document.querySelector("#telefonoUsuario").textContent =
   perfilUsuario[usuario - 1].telefono;
 
   function salirPerfil() {
-    location.href = "./index.html";
+    location.href = "../index.html";
   }

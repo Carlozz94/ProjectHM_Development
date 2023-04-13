@@ -10,11 +10,11 @@ main {
 
 .color-nav{
   /*background-color: #76cc2b;*/
-  background-image: url("./Assets/hojas2.jpg");
+  background-image: url("../Assets/hojas2.jpg");
 } 
 
 .bg-color{
-  background-image: url("./Assets/hojas.jpg");
+  background-image: url("../Assets/hojas.jpg");
 }
 
 form h2, #recuperapass {

@@ -322,7 +322,7 @@
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
 		 *
-		 *      // Immediately 'nuke' the current rows (perhaps waiting for an Ajax callback..)
+		 *      // Immediately 'nuke' the current rows (perhaps waiting for an Ajax callback...)
 		 *      oTable.fnClearTable();
 		 *    } );
 		 */
@@ -462,7 +462,7 @@
 		 *    $(document).ready(function() {
 		 *      var oTable = $('#example').dataTable();
 		 *
-		 *      // Sometime later - filter..
+		 *      // Sometime later - filter...
 		 *      oTable.fnFilter( 'test string' );
 		 *    } );
 		 */
@@ -503,7 +503,7 @@
 		 *
 		 *      oTable.$('tr').click( function () {
 		 *        var data = oTable.fnGetData( this );
-		 *        // .. do something with the array / object of data for the row
+		 *        // ... do something with the array / object of data for the row
 		 *      } );
 		 *    } );
 		 *
@@ -1766,7 +1766,7 @@
 	
 			// Likewise with loading records
 			if ( ! lang.sLoadingRecords && zeroRecords &&
-				defaults.sLoadingRecords === "Loading.." )
+				defaults.sLoadingRecords === "Loading..." )
 			{
 				_fnMap( lang, lang, 'sZeroRecords', 'sLoadingRecords' );
 			}
@@ -3754,7 +3754,7 @@
 			nTr = nTrs[i];
 			iColumn = 0;
 	
-			/* For every cell in the row.. */
+			/* For every cell in the row... */
 			nCell = nTr.firstChild;
 			while ( nCell ) {
 				if ( nCell.nodeName.toUpperCase() == "TD" ||
@@ -4250,7 +4250,7 @@
 		$(settings.nTable).on( 'search.dt.DT', function ( ev, s ) {
 			if ( settings === s ) {
 				// IE9 throws an 'unknown error' if document.activeElement is used
-				// inside an iframe or frame..
+				// inside an iframe or frame...
 				try {
 					if ( jqFilter[0] !== document.activeElement ) {
 						jqFilter.val( previousSearch.sSearch );
@@ -5409,7 +5409,7 @@
 					sanityWidth+barWidth :
 					sanityWidth;
 	
-			// IE6/7 are a law unto themselves..
+			// IE6/7 are a law unto themselves...
 			if ( ie67 && (divBodyEl.scrollHeight >
 				divBodyEl.offsetHeight || divBody.css('overflow-y') == "scroll")
 			) {
@@ -5698,7 +5698,7 @@
 				var cell = $(headerCells[i]);
 				var border = cell.outerWidth() - cell.width();
 	
-				// Use getBounding.. where possible (not IE8-) because it can give
+				// Use getBounding... where possible (not IE8-) because it can give
 				// sub-pixel accuracy, which we then want to round up!
 				var bounding = browser.bBounding ?
 					Math.ceil( headerCells[i].getBoundingClientRect().width ) :
@@ -6071,7 +6071,7 @@
 			var th = col.nTh;
 	
 			// IE7 is throwing an error when setting these properties with jQuery's
-			// attr() and removeAttr() methods..
+			// attr() and removeAttr() methods...
 			th.removeAttribute('aria-sort');
 	
 			/* In ARIA only the first sorting column can be marked as sorting - no multi-sort option */
@@ -6743,21 +6743,21 @@
 	 *       {
 	 *         name:      'data'                -- string   - Property name
 	 *         val:       function () {},       -- function - Api method (or undefined if just an object
-	 *         methodExt: [ .. ],              -- array    - Array of Api object definitions to extend the method result
-	 *         propExt:   [ .. ]               -- array    - Array of Api object definitions to extend the property
+	 *         methodExt: [ ... ],              -- array    - Array of Api object definitions to extend the method result
+	 *         propExt:   [ ... ]               -- array    - Array of Api object definitions to extend the property
 	 *       },
 	 *       {
 	 *         name:     'row'
 	 *         val:       {},
-	 *         methodExt: [ .. ],
+	 *         methodExt: [ ... ],
 	 *         propExt:   [
 	 *           {
 	 *             name:      'data'
 	 *             val:       function () {},
-	 *             methodExt: [ .. ],
-	 *             propExt:   [ .. ]
+	 *             methodExt: [ ... ],
+	 *             propExt:   [ ... ]
 	 *           },
-	 *           ..
+	 *           ...
 	 *         ]
 	 *       }
 	 *     ]
@@ -6862,11 +6862,11 @@
 	 * top level object had. For example, these two calls are equivalent:
 	 *
 	 *     // Not chained
-	 *     api.row.add( {..} );
+	 *     api.row.add( {...} );
 	 *     api.draw();
 	 *
 	 *     // Chained
-	 *     api.row.add( {..} ).draw();
+	 *     api.row.add( {...} ).draw();
 	 *
 	 * @class DataTable.Api
 	 * @param {array|object|string|jQuery} context DataTable identifier. This is
@@ -7090,7 +7090,7 @@
 	
 		lastIndexOf: __arrayProto.lastIndexOf || function (obj, start)
 		{
-			// Bit cheeky..
+			// Bit cheeky...
 			return this.indexOf.apply( this.toArray.reverse(), arguments );
 		},
 	
@@ -7244,21 +7244,21 @@
 	//       {
 	//         name:      'data'                -- string   - Property name
 	//         val:       function () {},       -- function - Api method (or undefined if just an object
-	//         methodExt: [ .. ],              -- array    - Array of Api object definitions to extend the method result
-	//         propExt:   [ .. ]               -- array    - Array of Api object definitions to extend the property
+	//         methodExt: [ ... ],              -- array    - Array of Api object definitions to extend the method result
+	//         propExt:   [ ... ]               -- array    - Array of Api object definitions to extend the property
 	//       },
 	//       {
 	//         name:     'row'
 	//         val:       {},
-	//         methodExt: [ .. ],
+	//         methodExt: [ ... ],
 	//         propExt:   [
 	//           {
 	//             name:      'data'
 	//             val:       function () {},
-	//             methodExt: [ .. ],
-	//             propExt:   [ .. ]
+	//             methodExt: [ ... ],
+	//             propExt:   [ ... ]
 	//           },
-	//           ..
+	//           ...
 	//         ]
 	//       }
 	//     ]
@@ -8956,7 +8956,7 @@
 	 * Set the ordering for the table.
 	 *
 	 * @param {array} order 1D array of sorting information to be applied.
-	 * @param {array} [..] Optional additional sorting conditions
+	 * @param {array} [...] Optional additional sorting conditions
 	 * @returns {DataTables.Api} this
 	 *//**
 	 * Set the ordering for the table.
@@ -10103,14 +10103,14 @@
 		 *
 		 * @example
 		 *   // Get JSON data from a file via Ajax.
-		 *   // Note DataTables expects data in the form `{ data: [ ..data.. ] }` by default).
+		 *   // Note DataTables expects data in the form `{ data: [ ...data... ] }` by default).
 		 *   $('#example').dataTable( {
 		 *     "ajax": "data.json"
 		 *   } );
 		 *
 		 * @example
 		 *   // Get JSON data from a file via Ajax, using `dataSrc` to change
-		 *   // `data` to `tableData` (i.e. `{ tableData: [ ..data.. ] }`)
+		 *   // `data` to `tableData` (i.e. `{ tableData: [ ...data... ] }`)
 		 *   $('#example').dataTable( {
 		 *     "ajax": {
 		 *       "url": "data.json",
@@ -10351,7 +10351,7 @@
 		 *        "paginate": false
 		 *      } );
 		 *
-		 *      // Some time later..
+		 *      // Some time later....
 		 *      $('#example').dataTable( {
 		 *        "filter": false,
 		 *        "destroy": true
@@ -11650,7 +11650,7 @@
 			 * parameter is not used when loading data by server-side processing, just
 			 * Ajax sourced data with client-side processing.
 			 *  @type string
-			 *  @default Loading..
+			 *  @default Loading...
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.loadingRecords
@@ -11659,19 +11659,19 @@
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "language": {
-			 *          "loadingRecords": "Please wait - loading.."
+			 *          "loadingRecords": "Please wait - loading..."
 			 *        }
 			 *      } );
 			 *    } );
 			 */
-			"sLoadingRecords": "Loading..",
+			"sLoadingRecords": "Loading...",
 	
 	
 			/**
 			 * Text which is displayed when the table is processing a user action
 			 * (usually a sort command or similar).
 			 *  @type string
-			 *  @default Processing..
+			 *  @default Processing...
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.processing
@@ -11685,7 +11685,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sProcessing": "Processing..",
+			"sProcessing": "Processing...",
 	
 	
 			/**
@@ -14645,7 +14645,7 @@
 	// what is required from this methods.
 	$.extend( DataTable.ext.type.detect, [
 		// Plain numbers - first since V8 detects some plain numbers as dates
-		// e.g. Date.parse('55') (but not all, e.g. Date.parse('22')..).
+		// e.g. Date.parse('55') (but not all, e.g. Date.parse('22')...).
 		function ( d, settings )
 		{
 			var decimal = settings.oLanguage.sDecimal;
@@ -14995,7 +14995,7 @@
 	
 	/*
 	 * This is really a good bit rubbish this method of exposing the internal methods
-	 * publicly.. - To be fixed in 2.0 using methods on the prototype
+	 * publicly... - To be fixed in 2.0 using methods on the prototype
 	 */
 	
 	

@@ -2,7 +2,7 @@
   background-color: #f9ffda;
 }
 .color-nav {
-  background-image: url("./Assets/hojas2.jpg");
+  background-image: url("../Assets/hojas2.jpg");
   font-family: 'Quicksand', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-size:1.2rem;
@@ -174,5 +174,5 @@
   background-color: #c8cb8d;
 }
 .bg-color{
-  background-image: url("./Assets/hojas.jpg");
+  background-image: url("../Assets/hojas.jpg");
 }

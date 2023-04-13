@@ -240,7 +240,11 @@ function enviarCompra(e) {
     //  .addEventListener('submit', function(event) {
     //    event.preventDefault();
 
+<<<<<<< HEAD
     btn.value = "Enviando...";
+=======
+    btn.value = "Enviando..";
+>>>>>>> parent of 9241069 (correcion de direccionamiento)
 
     const serviceID = "default_service";
     const templateID = "template_qxwi0jn";

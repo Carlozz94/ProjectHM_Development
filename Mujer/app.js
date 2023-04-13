@@ -6,7 +6,7 @@ const stockProductosMujer= [ /*blusas */
     cantidad: 1,
     desc: "Estilo formal",
     precio: 599,
-    img: "./Assets/Mujer/Blusas/7_7.jpg",
+    img: "../Assets/Mujer/Blusas/7_7.jpg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const stockProductosMujer= [ /*blusas */
     cantidad: 1,
     desc: "Estilo formal/casual",
     precio: 399,
-    img: "./Assets/Mujer/Blusas/4.jpg",
+    img: "../Assets/Mujer/Blusas/4.jpg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const stockProductosMujer= [ /*blusas */
     cantidad: 1,
     desc: "Casual",
     precio: 599,
-    img: "./Assets/Mujer/Blusas/1.jpg",
+    img: "../Assets/Mujer/Blusas/1.jpg",
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ const stockProductosMujer= [ /*blusas */
     cantidad: 1,
     desc: "Estilo casual",
     precio: 399,
-    img: "./Assets/Mujer/Blusas/12_12.jpg",
+    img: "../Assets/Mujer/Blusas/12_12.jpg",
   },
 ]; 
 const stockProductosMujerPlayeras= [
@@ -40,7 +40,7 @@ const stockProductosMujerPlayeras= [
     cantidad: 1,
     desc: "Casual",
     precio: 299,
-    img: "./Assets/Mujer/Playeras/12.jpg",
+    img: "../Assets/Mujer/Playeras/12.jpg",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const stockProductosMujerPlayeras= [
     cantidad: 1,
     desc: "Casual",
     precio: 599,
-    img: "./Assets/Mujer/Playeras/11.jpg",
+    img: "../Assets/Mujer/Playeras/11.jpg",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const stockProductosMujerPlayeras= [
     cantidad: 1,
     desc: "Trendy",
     precio: 499,
-    img: "./Assets/Mujer/Playeras/3.jpg",
+    img: "../Assets/Mujer/Playeras/3.jpg",
   },
   {
     id: 8,
@@ -64,7 +64,7 @@ const stockProductosMujerPlayeras= [
     cantidad: 1,
     desc: "Casual/Primavera",
     precio: 499,
-    img: "./Assets/Mujer/Playeras/4.jpg",
+    img: "../Assets/Mujer/Playeras/4.jpg",
   }
 ];
 const stockProductosMujerPantalones= [
@@ -74,7 +74,7 @@ const stockProductosMujerPantalones= [
     cantidad: 1,
     desc: "Casual",
     precio: 699,
-    img: "./Assets/Mujer/Pantalones/4.jpg",
+    img: "../Assets/Mujer/Pantalones/4.jpg",
   },
   {
     id: 10,
@@ -82,7 +82,7 @@ const stockProductosMujerPantalones= [
     cantidad: 1,
     desc: "Formal",
     precio: 699,
-    img: "./Assets/Mujer/Pantalones/5.jpg",
+    img: "../Assets/Mujer/Pantalones/5.jpg",
   },
   {
     id: 11,
@@ -90,7 +90,7 @@ const stockProductosMujerPantalones= [
     cantidad: 1,
     desc: "Casual/Trendy",
     precio: 699,
-    img: "./Assets/Mujer/Pantalones/3.jpg",
+    img: "../Assets/Mujer/Pantalones/3.jpg",
   },
   {
     id: 12,
@@ -98,7 +98,7 @@ const stockProductosMujerPantalones= [
     cantidad: 1,
     desc: "Casual/Urban",
     precio: 699,
-    img: "./Assets/Mujer/Pantalones/1.jpg",
+    img: "../Assets/Mujer/Pantalones/1.jpg",
   }
 ];
 const stockProductosMujerVestidos= [
@@ -108,7 +108,7 @@ const stockProductosMujerVestidos= [
     cantidad: 1,
     desc: "Vestido casual con cinturón",
     precio: 899,
-    img: "./Assets/Mujer/Vestidos/6_6.jpg",
+    img: "../Assets/Mujer/Vestidos/6_6.jpg",
   },
   {
     id: 14,
@@ -116,7 +116,7 @@ const stockProductosMujerVestidos= [
     cantidad: 1,
     desc: "Casual",
     precio: 899,
-    img: "./Assets/Mujer/Vestidos/1.jpg",
+    img: "../Assets/Mujer/Vestidos/1.jpg",
   },
   {
     id: 15,
@@ -124,7 +124,7 @@ const stockProductosMujerVestidos= [
     cantidad: 1,
     desc: "Trendy/casual",
     precio: 999,
-    img: "./Assets/Mujer/Vestidos/4.jpg",
+    img: "../Assets/Mujer/Vestidos/4.jpg",
   },
   {
     id: 16,
@@ -132,7 +132,7 @@ const stockProductosMujerVestidos= [
     cantidad: 1,
     desc: "Formal/cómodo",
     precio: 999,
-    img: "./Assets/Mujer/Vestidos/2.jpg",
+    img: "../Assets/Mujer/Vestidos/2.jpg",
   }
 ];
 const stockProductosMujerSueteres= [
@@ -142,7 +142,7 @@ const stockProductosMujerSueteres= [
     cantidad: 1,
     desc: "Casual/Cómodo",
     precio: 599,
-    img: "./Assets/Mujer/Sueteres/1.jpg",
+    img: "../Assets/Mujer/Sueteres/1.jpg",
   },
   {
     id: 18,
@@ -150,7 +150,7 @@ const stockProductosMujerSueteres= [
     cantidad: 1,
     desc: "Casual/Cómodo/Trendy",
     precio: 899,
-    img: "./Assets/Mujer/Sueteres/3.jpg",
+    img: "../Assets/Mujer/Sueteres/3.jpg",
   },
   {
     id: 19,
@@ -158,7 +158,7 @@ const stockProductosMujerSueteres= [
     cantidad: 1,
     desc: "Casual/Cómodo",
     precio: 499,
-    img: "./Assets/Mujer/Sueteres/14.jpg",
+    img: "../Assets/Mujer/Sueteres/14.jpg",
   },
   {
     id: 20,
@@ -166,7 +166,7 @@ const stockProductosMujerSueteres= [
     cantidad: 1,
     desc: "Casual/Cómodo",
     precio: 599,
-    img: "./Assets/Mujer/Sueteres/2.jpg",
+    img: "../Assets/Mujer/Sueteres/2.jpg",
   }
 ];
 let carrito = [];
@@ -421,7 +421,7 @@ function procesarPedido() {
 
 const btn = document.getElementById('btnFinCompra');
 btn.addEventListener("click", e =>{
-  btn.value = 'Enviando..';
+  btn.value = 'Enviando...';
   setTimeout(() => {
     alert("Compra exitosa");
     localStorage.removeItem("carrito");
@@ -434,7 +434,7 @@ btn.addEventListener("click", e =>{
 
   const btn = document.getElementById('button');
 
-   btn.value = 'Enviando..';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_qxwi0jn';
