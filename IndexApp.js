@@ -37,7 +37,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 1200,
-    img: "./Assets/Hombre/CamisaMezclilla.jpg",
+    img: "../Assets/Hombre/CamisaMezclilla.jpg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Semi Formal",
     precio: 1299,
-    img: "./Assets/Hombre/PantalonNegro.jpg",
+    img: "../Assets/Hombre/PantalonNegro.jpg",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Semi formal",
     precio: 1999,
-    img: "./Assets/Hombre/AbrigoCafe.jpg",
+    img: "../Assets/Hombre/AbrigoCafe.jpg",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const stockProductos = [
     cantidad: 1,
     desc: "Casual",
     precio: 499,
-    img: "./Assets/Hombre/PlayeraOversize.jpg",
+    img: "../Assets/Hombre/PlayeraOversize.jpg",
   },
 ];
 let carrito = [];
@@ -240,7 +240,7 @@ function enviarCompra(e) {
     //  .addEventListener('submit', function(event) {
     //    event.preventDefault();
 
-    btn.value = "Enviando.";
+    btn.value = "Enviando...";
 
     const serviceID = "default_service";
     const templateID = "template_qxwi0jn";
