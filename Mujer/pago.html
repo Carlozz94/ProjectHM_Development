@@ -142,107 +142,55 @@
                             </div>
                         </div>
 
-                           <div class="divForm">
-                            <form class="formulario" id="entregar">
-                                <div>ENTREGAR A </div>
-                                
-
+                        <div class="divForm">
+                            <form class="formulario">
+                                <div>Informacion de pago </div>
                                 
                                 <input
                                  type="text"
                                  class="form-controls"
-                                 id="nombre"
-                                 placeholder="Nombre"
-                                 name="nombre"
-                                 required
-                                 autofocus
-                                />
-                                
-
-                                <input
-                                 type="text"
-                                 class="form-controls"
-                                 id="apellido"
-                                 placeholder="Apellido"
-                                 name="apellido"
+                                 id="tarjeta"
+                                 placeholder="Numero de tarjeta"
+                                 name="tarjeta"
                                  required
                                  autofocus
                                 />
                                 <input
                                  type="text"
                                  class="form-controls"
-                                 id="calle"
-                                 placeholder="Calle, número interior y exterior"
-                                 name="calle"
+                                 id="nombreTarjeta"
+                                 placeholder="Nombre del titular"
+                                 name="nombreTarjeta"
                                  required
                                  autofocus
                                 />
                                 <input
                                  type="text"
                                  class="form-controls"
-                                 id="colonia"
-                                 placeholder="Colonia"
-                                 name="colonia"
-                                 required
-                                 autofocus
-                                />
-                                
-                                
-                                <input
-                                 type="text"
-                                 class="form-controls"
-                                 id="ciudad"
-                                 placeholder="Ciudad"
-                                 name="ciudad"
-                                 required
-                                 autofocus
-                                />
-                                
-
-                                <input
-                                 type="text"
-                                 class="form-controls"
-                                 id="estado"
-                                 placeholder="Estado"
-                                 name="estado"
+                                 id="fecha"
+                                 placeholder="Fecha de vencimiento"
+                                 name="fecha"
                                  required
                                  autofocus
                                 />
                                 <input
                                  type="text"
                                  class="form-controls"
-                                 id="codigo"
-                                 placeholder="Codigo Postal"
-                                 name="codigo"
-                                 required
-                                 autofocus
-                                />
-                                <input
-                                 type="text"
-                                 class="form-controls"
-                                 id="telefono"
-                                 placeholder="Telefono"
-                                 name="telefono"
+                                 id="cvv"
+                                 placeholder="Codigo de seguridad"
+                                 name="cvv"
                                  required
                                  autofocus
                                 />
 
-                                <button type="submit" class="botonWomenMain">INGRESAR DIRECCIÓN</button>
+                                <button type="button" class="botonWomenMain" id="btnFinCompra">Finalizar compra</button>
                                 
-                                
-                                
-
                             </form>
-                           </div>
-                                
-                                    
-                                
+                        </div>
 
                                 
-
-
-
                             
+                        
                         
                         
 
@@ -262,8 +210,7 @@
             </div>
         </div>
     </main>
-    <script src="./resumencompra.js"></script>
-    <script src="../Mujer/compra.js"></script>
+    <script src="app.js"></script>
     <script src="../Carrito/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
