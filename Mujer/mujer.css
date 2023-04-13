@@ -1,15 +1,15 @@
-.color-nav{
+.color-nav {
   /*background-color: #76cc2b;*/
   background-image: url("../Assets/hojas2.jpg");
-} 
-  
+}
+
 .mujer {
   position: relative;
   max-width: 80rem;
   margin: auto;
 }
 
-.title{
+.title {
   padding: 1rem;
   margin-top: 3rem;
   font-family: "Raleway", sans-serif;
@@ -17,13 +17,13 @@
   text-align: center;
 }
 
-.sub-title{
+.sub-title {
   margin-top: 5rem;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   margin-left: 2rem;
 }
 
-.bg-color{
+.bg-color {
   background-image: url("../Assets/hojas.jpg");
 }
