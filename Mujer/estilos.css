@@ -33,7 +33,7 @@ body {
 }
 .parrafo {
   font-weight: 900;
-  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #precioTotal {
   margin: 0;

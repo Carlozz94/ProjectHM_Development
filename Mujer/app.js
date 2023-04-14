@@ -226,43 +226,11 @@ function procesarPedido() {
   }
 }
 
-const btn = document.getElementById('btnFinCompra');
-btn.addEventListener("click", e =>{
-  btn.value = 'Enviando...';
+const btn = document.getElementById("btnFinCompra");
+btn.addEventListener("click", (e) => {
+  btn.value = "Enviando...";
   setTimeout(() => {
     alert("Compra exitosa");
     localStorage.removeItem("carrito");
-
   }, 1000);
 });
-
- function enviarCompra(e){
-   e.preventDefault();
-
-  const btn = document.getElementById('button');
-
-   btn.value = 'Enviando...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_qxwi0jn';
-    
-   const spinner = document.querySelector('#spinner');
-   spinner.classList.add('d-flex');
-   spinner.classList.remove('d-none');
-
-   setTimeout(() => {
-     spinner.classList.remove('d-flex');
-     spinner.classList.add('d-none');
-     formulario.reset();
-
-     const alertExito = document.createElement('p');
-     alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success');
-     alertExito.textContent = 'Compra realizada correctamente';
-     formulario.appendChild(alertExito);
-
-     setTimeout(() => {
-       alertExito.remove();
-     }, 3000)
-   }, 3000)
- localStorage.clear();
- }
