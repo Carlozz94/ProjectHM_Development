@@ -1,10 +1,10 @@
 body {
   background-color: #f9ffda !important;
+  cursor: url(../Assets/Cursor/hoja-verde.png),auto;
 }
 main {
   /*text-align: center;*/
   height: 100vh;
-
   padding-top: 5em;
 }
 
@@ -32,7 +32,7 @@ form h2, #recuperapass {
 }
 
 #separador {
-  height: 23vh;
+  height: 75vh;
 }
 
 #imagenForm {
