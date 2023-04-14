@@ -27,6 +27,48 @@
   /*border-style: ridge;*/
 }
 
+.botonMainVaciar {
+  /*background-color: #38b972;*/
+  background-color: #9d694b;
+  color: #fffefe;
+  /*border-radius: 5em;*/
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  min-width: 20em;
+  min-height: 3em;
+  /*border-style: ridge;*/
+}
+
+.botonMainContinuar {
+  /*background-color: #38b972;*/
+  background-color: #38b972;
+  color: #fffefe;
+  /*border-radius: 5em;*/
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  min-width: 20em;
+  min-height: 3em;
+  /*border-style: ridge;*/
+}
+
+.botonMainCerrar {
+  /*background-color: #38b972;*/
+  background-color: #a4b5ab;
+  color: #fffefe;
+  /*border-radius: 5em;*/
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  min-width: 20em;
+  min-height: 3em;
+  /*border-style: ridge;*/
+}
+
 #resumenCompra {
   background: #f7fee9;
 }

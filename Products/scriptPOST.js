@@ -1,5 +1,8 @@
 /**************************   DATA  ************************/
 //Primero tenemos que obtener los elementos del documento HTML para trabajar con ellos
+
+console.log("Entre a la funcion");
+
 document.getElementById("btnSave").addEventListener("click", function(e){
 
     let name = document.getElementById("name");
@@ -59,4 +62,5 @@ body: JSON.stringify(datos), //Pasamos la constante definida anteriormente como 
 .catch((error)=>{
     console.log("No pudimos guardar el producto", error);
 });
-});
+
+    });

@@ -50,10 +50,11 @@ a {
   background-color: #38b972;
   /*background-color: #fb5a00;*/
   color: #fffefe;
-  /*border-radius: 5em;*/
+  /*border-radius: 1em;*/
   text-transform: uppercase;
   margin-bottom: 2em;
   border-style: none;
+  margin-top: 2em;
 
   margin-left: 4em;
   display: block;
@@ -64,4 +65,57 @@ a {
 
 #comprando {
   padding-top: 0.8em;
+}
+
+.formulario {
+  background-color: #d6dccc;
+  padding-bottom: 2em;
+  margin-top: 2em;
+
+  max-width: 35em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.form-controls {
+  display: inline;
+  /*border-radius: 1em;*/
+  border-style: none;
+  /*margin-left: 4em;*/
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  min-height: 3em;
+  min-width: 15em;
+  border-bottom: 1px solid #6ddf0f;
+  background-color: #d6dccc;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .divForm {
+    margin-left: 2em;
+  }
+  .botonWomenMain {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .divForm {
+    margin-left: 6em;
+  }
+  .botonWomenMain {
+    margin-left: 10em;
+  }
+}
+@media (min-width: 1024px) {
+  .divForm {
+    margin-left: 20em;
+  }
+  .botonWomenMain {
+    margin-left: 10em;
+  }
 }
