@@ -1,19 +1,21 @@
-var perfilUsuario = JSON.parse(localStorage.getItem("usuarios"));
-
-var usuario = perfilUsuario.length;
+var perfilUsuario = JSON.parse(localStorage.getItem("usuarioIniciado"));
+console.log(perfilUsuario);
+console.log(perfilUsuario.length);
+//var usuario = perfilUsuario.length;
 
 document.querySelector("#nombreUsuario").textContent =
-  perfilUsuario[usuario - 1].nombre;
+  perfilUsuario[0].Nombre;
 
 document.querySelector("#apellidoUsuario").textContent =
-  perfilUsuario[usuario - 1].apellido;
+  perfilUsuario[0].Apellido;
 
 document.querySelector("#emailUsuario").textContent =
-  perfilUsuario[usuario - 1].email;
+  perfilUsuario[0].Email;
 
-document.querySelector("#telefonoUsuario").textContent =
-  perfilUsuario[usuario - 1].telefono;
+//document.querySelector("#telefonoUsuario").textContent = '123456789';
 
+//ejemplo localStorage.removeItem('image');
+localStorage.removeItem('usuarioIniciado');
   function salirPerfil() {
     location.href = "../index.html";
   }

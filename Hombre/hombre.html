@@ -177,22 +177,26 @@
           </div>
           <div class="modal-body"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" id="vaciarCarrito">
+            <div>
+              <span>Precio total: $</span>
+              <p class="text-center" id="precioTotal"></p>
+            </div>
+            <br><br>
+            <button type="button" class="botonMainVaciar" id="vaciarCarrito">
               Vaciar carrito
             </button>
-            <button type="button" id="procesarCompra" class="btn btn-primary">
+            <button type="button" class="botonMainContinuar" id="procesarCompra" >
               Continuar compra
             </button>
             <button
               type="button"
-              class="btn btn-secondary"
+              class="botonMainCerrar"
               data-bs-dismiss="modal"
             >
               Cerrar
             </button>
 
-            <span>Precio total:</span>
-            <p class="text-center" id="precioTotal"></p>
+            
           </div>
         </div>
       </div>

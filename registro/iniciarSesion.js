@@ -1,3 +1,4 @@
+/*
 const iniciar = document.querySelector("#inicio");
 iniciar.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -20,3 +21,4 @@ iniciar.addEventListener("submit", (e) => {
 
   window.location.href = "./perfil.html";
 });
+*/

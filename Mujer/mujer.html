@@ -21,8 +21,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -53,10 +51,10 @@
             <div class="collapse navbar-collapse" id="menu">
               <ul class="navbar-nav m-auto"> 
                   <li class="nav-item">
-                      <a class="nav-link active" href="../Hombre/hombre.html">Hombre</a>
+                      <a class="nav-link" href="../Hombre/hombre.html">Hombre</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../Mujer/mujer.html">Mujer</a>
+                      <a class="nav-link active" href="../Mujer/mujer.html">Mujer</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
@@ -186,21 +184,24 @@
             </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" id="vaciarCarrito">
+              <div>
+                <span>Total: $</span>
+                <p class="text-center" id="precioTotal"></p>
+              </div>
+              <button type="button" id="vaciarCarrito" class="botonMainVaciar" >
                 Vaciar carrito
               </button>
-              <button type="button" id="procesarCompra" class="btn btn-primary">
+              <button type="button" id="procesarCompra" class="botonMainContinuar">
                 Continuar compra
               </button>
               <button
                 type="button"
-                class="btn btn-success"
+                class="botonMainCerrar"
                 data-bs-dismiss="modal"
               >
                 Cerrar
               </button>
-              <span>Total:</span>
-              <p class="text-center" id="precioTotal"></p>
+              
             </div>
           </div>
         </div>
