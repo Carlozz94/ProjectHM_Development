@@ -119,7 +119,7 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "compraM.html";
+      location.href = "../Mujer/compraW.html";
     }
   });
 }
