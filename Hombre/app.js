@@ -1,9 +1,86 @@
+const URL_MAIN = 'https://projecthmdevelopmentback-production.up.railway.app/wm/product/';
+//let productos;
 let carrito = [];
+let productos;
 
-const contenedor = document.querySelector("#contenedor");
-const contenedorPAN = document.querySelector("#contenedorPAN");
-const contenedorSA = document.querySelector("#contenedorSA");
-const contenedorMAS = document.querySelector("#contenedorMAS");
+function addItems(contenedor,contenedorPAN,contenedorSA,contenedorMAS) { //div_Productos es el div donde se va a agregar los productos
+  fetch(URL_MAIN, {
+      method: 'get' //tipo de método
+  }).then(function(response) {//response es la respuesta del servidor
+      response.json().then(function (json) { //json es el objeto que se obtiene del servicio
+          console.log(json); //imprime el json
+          console.log(json.length); //imprime el tamaño del json
+          productos = json; //se guarda el json en la variable productos
+          Array.from(json).forEach((prod) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
+            const {idProduct, name, price, stock, description, color, size, category, image, fk_idCategoryClothe, fk_idAdmin} = prod;
+            if (contenedor && fk_idCategoryClothe == 6 && category == "Hombre") {
+              contenedor.innerHTML += `
+                <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+                <img class="card-img-top my-2" src="${image}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">${name}</h5>
+                  <p class="card-text">Precio: $${price}</p>
+                  <p class="card-text">Descripcion: ${description}</p>
+                  <p class="card-text">Cantidad: ${stock}</p>
+                  <button class="botonMain" onclick="agregarProducto(${idProduct})">Comprar Producto</button>
+                </div>
+              </div>
+                `;
+            }else if(contenedorPAN && fk_idCategoryClothe == 3 && category == "Hombre"){
+              contenedorPAN.innerHTML += `
+                <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+                <img class="card-img-top my-2" src="${image}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">${name}</h5>
+                  <p class="card-text">Precio: $${price}</p>
+                  <p class="card-text">Descripcion: ${description}</p>
+                  <p class="card-text">Cantidad: ${stock}</p>
+                  <button class="botonMain" onclick="agregarProducto(${idProduct})">Comprar Producto</button>
+                </div>
+              </div>
+                `;
+            }else if(contenedorSA && fk_idCategoryClothe == 7 && category == "Hombre"){
+              contenedorSA.innerHTML += `
+                <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+                <img class="card-img-top my-2" src="${image}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">${name}</h5>
+                  <p class="card-text">Precio: $${price}</p>
+                  <p class="card-text">Descripcion: ${description}</p>
+                  <p class="card-text">Cantidad: ${stock}</p>
+                  <button class="botonMain" onclick="agregarProducto(${idProduct})">Comprar Producto</button>
+                </div>
+              </div>
+                `;
+            }else if(contenedorMAS && fk_idCategoryClothe == 2 && category == "Hombre"){
+              contenedorMAS.innerHTML += `
+                <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
+                <img class="card-img-top my-2" src="${image}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">${name}</h5>
+                  <p class="card-text">Precio: $${price}</p>
+                  <p class="card-text">Descripcion: ${description}</p>
+                  <p class="card-text">Cantidad: ${stock}</p>
+                  <button class="botonMain" onclick="agregarProducto(${idProduct})">Comprar Producto</button>
+                </div>
+              </div>
+                `;
+            }
+          }); // foreach para agregar los productos al div del HTML
+      });//then
+  }).catch(function(err) { //si hay un error
+      console.log(err); //imprime el error
+  });
+}// addItems
+
+window.addEventListener("load", function (){ //cuando se cargue la página
+  const contenedor = document.querySelector("#contenedor"); //contenedor donde se va a agregar los producto
+  const contenedorPAN = document.querySelector("#contenedorPAN");//contenedor donde se va a agregar los producto
+  const contenedorSA = document.querySelector("#contenedorSA");//contenedor donde se va a agregar los producto
+  const contenedorMAS = document.querySelector("#contenedorMAS");//contenedor donde se va a agregar los producto
+  addItems(contenedor,contenedorPAN,contenedorSA,contenedorMAS); //se llama a la función addItems
+});
+
 const carritoContenedor = document.querySelector("#carritoContenedor");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
@@ -18,7 +95,6 @@ if (activarFuncion) {
 
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-
   mostrarCarrito();
   document.querySelector("#activarFuncion").click(procesarPedido);
 });
@@ -43,113 +119,29 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "../Mujer/compraW.html";
+      location.href = "compraM.html";
     }
   });
 }
 
-stockProductosHombre.forEach((prod) => {
-  const { id, nombre, precio, desc, img, cantidad } = prod;
-  if (contenedor) {
-    contenedor.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
-      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <p class="card-text">Precio: ${precio}</p>
-        <p class="card-text">Descripción: ${desc}</p>
-        <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
-      </div>
-    </div>
-      `;
-  }
-});
-
-stockProductosHombrePantalones.forEach((prod) => {
-  const { id, nombre, precio, desc, img, cantidad } = prod;
-  if (contenedorPAN) {
-    contenedorPAN.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
-      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <p class="card-text">Precio: ${precio}</p>
-        <p class="card-text">Descripcion: ${desc}</p>
-        <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
-      </div>
-    </div>
-      `;
-  }
-});
 /* CLASE DEFAULT DE LOS BOTONES ANTES DE CAMBIO GJC
   ubicacion: estamos en pantalones hombre
     class="btn btn-primary"
   */
 
-stockProductosHombreSacos.forEach((prod) => {
-  const { id, nombre, precio, desc, img, cantidad } = prod;
-  if (contenedorSA) {
-    contenedorSA.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
-      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <p class="card-text">Precio: ${precio}</p>
-        <p class="card-text">Descripcion: ${desc}</p>
-        <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
-      </div>
-    </div>
-      `;
-  }
-});
-
-stockProductosHombreMas.forEach((prod) => {
-  const { id, nombre, precio, desc, img, cantidad } = prod;
-  if (contenedorMAS) {
-    contenedorMAS.innerHTML += `
-      <div class="card mt-3" style="width: 22rem; margin:auto;background-color: #fdfcf5;">
-      <img class="card-img-top my-2" src="${img}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">${nombre}</h5>
-        <p class="card-text">Precio: ${precio}</p>
-        <p class="card-text">Descripcion: ${desc}</p>
-        <p class="card-text">Cantidad: ${cantidad}</p>
-        <button class="botonMain" onclick="agregarProducto(${id})">Comprar Producto</button>
-      </div>
-    </div>
-      `;
-  }
-});
-
 const agregarProducto = (id) => {
-  let sum1 =
-    stockProductosHombrePantalones.length + stockProductosHombre.length;
-  let sum2 = sum1 + stockProductosHombreSacos.length;
-  let sum3 = sum2 + stockProductosHombreMas.length;
-
-  const existe = carrito.some((prod) => prod.id === id);
-
+  const existe = carrito.some((prod) => prod.idProduct === id);
   if (existe) {
     const prod = carrito.map((prod) => {
-      if (prod.id === id) {
-        prod.cantidad++;
+      if (prod.idProduct === id) {
+          prod.cantidad++;
       }
     });
-  } else if (id > 0 && id <= stockProductosHombre.length) {
-    const item = stockProductosHombre.find((prod) => prod.id === id);
+  } 
+  else{
+    const item = productos.find((prod) => prod.idProduct === id);
     carrito.push(item);
-  } else if (id > stockProductosHombre.length && id <= sum1) {
-    const item = stockProductosHombrePantalones.find((prod) => prod.id === id);
-    carrito.push(item);
-  } else if (id > sum1 && id <= sum2) {
-    const item = stockProductosHombreSacos.find((prod) => prod.id === id);
-    carrito.push(item);
-  } else if (id > sum2 && id <= sum3) {
-    const item = stockProductosHombreMas.find((prod) => prod.id === id);
-    carrito.push(item);
+    carrito.forEach((prod) => prod.cantidad = 1);
   }
   mostrarCarrito();
 };
@@ -159,18 +151,18 @@ const mostrarCarrito = () => {
   if (modalBody) {
     modalBody.innerHTML = "";
     carrito.forEach((prod) => {
-      const { id, nombre, precio, desc, img, cantidad } = prod;
+      const { idProduct, name, price, stock, description, color, size, category, image, fk_idCategoryClothe, fk_idAdmin, cantidad} = prod;
       console.log(modalBody);
       modalBody.innerHTML += `
         <div class="modal-contenedor">
           <div>
-          <img class="img-fluid img-carrito" src="${img}"/>
+          <img class="img-fluid img-carrito" src="${image}"/>
           </div>
           <div>
-          <p>Producto: ${nombre}</p>
-        <p>Precio: ${precio}</p>
+          <p>Producto: ${name}</p>
+        <p>Precio: ${price}</p>
         <p>Cantidad :${cantidad}</p>
-        <button class="botonMainEliminar"  onclick="eliminarProducto(${id})">Eliminar producto</button>
+        <button class="botonMainEliminar"  onclick="eliminarProducto(${idProduct})">Eliminar producto</button>
           </div>
         </div> 
     
@@ -189,12 +181,8 @@ const mostrarCarrito = () => {
   carritoContenedor.textContent = carrito.length;
 
   if (precioTotal) {
-    precioTotal.innerText = carrito.reduce(
-      (acc, prod) => acc + prod.cantidad * prod.precio,
-      0
-    );
+    precioTotal.innerText = (carrito.reduce((acc, prod) => acc + prod.cantidad * prod.price, 0)).toFixed(2);
   }
-
   guardarStorage();
 };
 
@@ -203,32 +191,32 @@ function guardarStorage() {
 }
 
 function eliminarProducto(id) {
-  const juegoId = id;
-  carrito = carrito.filter((juego) => juego.id !== juegoId);
+  const productId = id;
+  carrito = carrito.filter((prod) => prod.idProduct !== productId);
   mostrarCarrito();
 }
+
 function procesarPedido() {
   carrito.forEach((prod) => {
     const listaCompra = document.querySelector("#lista-compra tbody");
-    const { id, nombre, precio, img, cantidad } = prod;
+    const { idProduct, name, price, stock, description, color, size, category, image, fk_idCategoryClothe, fk_idAdmin, cantidad} = prod;
     if (listaCompra) {
       const row = document.createElement("tr");
       row.innerHTML += `
                 <td>
-                <img class="img-fluid img-carrito" src="${img}"/>
+                <img class="img-fluid img-carrito" src="${image}"/>
                 </td>
-                <td>${nombre}</td>
-              <td>${precio}</td>
+                <td>${name}</td>
+              <td>${price}</td>
               <td>${cantidad}</td>
-              <td>${precio * cantidad}</td>
+              <td>${(price * cantidad).toFixed(2)}</td>
               `;
       listaCompra.appendChild(row);
     }
   });
-  totalProceso.innerText = carrito.reduce(
-    (acc, prod) => acc + prod.cantidad * prod.precio,
-    0
-  );
+  if(totalProceso){
+    totalProceso.innerText = (carrito.reduce((acc, prod) => acc + prod.cantidad * prod.price, 0)).toFixed(2);
+  }
 }
 
 function enviarCompra(e) {
