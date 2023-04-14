@@ -186,13 +186,10 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "../Mujer/compraW.html";
-      //./compraM.html
-      
+      location.href = "compraM.html";
     }
   });
 }
-
 
 stockProductosHombre.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;

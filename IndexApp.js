@@ -105,7 +105,7 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      location.href = "../Mujer/compraW.html";
+      location.href = ".index.html";
     }
   });
 }
