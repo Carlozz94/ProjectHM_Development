@@ -1,45 +1,66 @@
+/**************************   DATA  ************************/
 //Primero tenemos que obtener los elementos del documento HTML para trabajar con ellos
 
-document.getElementById("btnSend").addEventListener("click", function(e){
+console.log("Entre a la funcion");
 
-    let nombrePlatillo = document.getElementById("nombrePlatillo");
-    let descripcionPlatillo = document.getElementById("descripcion");
-    let imagenPlatillo = document.getElementById("urlImagen");
-    let precioPlatillo = document.getElementById("precio");
+document.getElementById("btnSave").addEventListener("click", function(e){
+
+    let name = document.getElementById("name");
+    let price = document.getElementById("price");
+    let stock = document.getElementById("stock");
+    let description = document.getElementById("description");
+    let color = document.getElementById("color");
+    let size = document.getElementById("size");
+    let category = document.getElementById("category");
+    let image = document.getElementById("image");
+    let fk_idCategoryClothe = document.getElementById("fk_idCategoryClothe");
+    let fk_idAdmin = document.getElementById("fk_idAdmin");
     
     //Impresion en consola de estos datos a manera de test
-    console.log(nombrePlatillo.value);
-    console.log(descripcionPlatillo.value);
-    console.log(imagenPlatillo.value);
-    console.log(precioPlatillo.value);
-    
+    console.log(name.value);
+    console.log(price.value);
+    console.log(stock.value);
+    console.log(description.value);
+    console.log(color.value);
+    console.log(size.value);
+    console.log(category.value);
+    console.log(image.value);
+    console.log(fk_idCategoryClothe.value);
+    console.log(fk_idAdmin.value);
     
     //Crear una constante llamada datos para guardar la informacion y pasarla como un cuerpo de solicitud cuando lo necesite (los campos deben coincidir como los tengo declarados en mi modelo (objeto de JAVA))
     
     const datos = {
-        nombre: nombrePlatillo.value,
-        descripcion: descripcionPlatillo.value,
-        url_imagen: imagenPlatillo.value,
-        precio: precioPlatillo.value,
+        name: name.value,
+        price: price.value,
+        stock: stock.value,
+        description: description.value,
+        color: color.value,
+        size: size.value,
+        category: category.value,
+        image: image.value,
+        fk_idCategoryClothe:fk_idCategoryClothe.value,
+        fk_idAdmin:fk_idAdmin.value,
     };
     
-    //Fetch a la URL de mi API (el RequestMapping del Controller)
+//Fetch a la URL de mi API (el RequestMapping del Controller)
     
-    fetch ("http://localhost:8080/restaurante/platillos/", { //hago la conexion a la URL
+fetch ("http://localhost:8080/wm/product/", { //hago la conexion a la URL
     
-    //Especifico el tipo de solicitud que manejare
-    method: "POST",
-    headers: {
-        "Content-Type" : "application/json",
-    },
-    body: JSON.stringify(datos), //Pasamos la constante definida anteriormente como cuerpo de la solicitud
-    })
-    
-    .then((response) => response.text())
-    .then((data)=>{
-        console.log("Platillo guardado correctamente", data);
-    })
-    .catch((error)=>{
-        console.log("No pudimos guardar el platillo", error);
-    });
+//Especifico el tipo de solicitud que manejare
+method: "POST",
+headers: {
+    "Content-Type" : "application/json",
+},
+body: JSON.stringify(datos), //Pasamos la constante definida anteriormente como cuerpo de la solicitud
+})
+
+.then((response) => response.text())
+.then((data)=>{
+    console.log("Producto guardado correctamente", data);
+})
+.catch((error)=>{
+    console.log("No pudimos guardar el producto", error);
+});
+
     });
