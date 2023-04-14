@@ -1,13 +1,5 @@
 const stockProductos = [
   {
-    id: 1,
-    nombre: "Blusa negra con tirantes",
-    cantidad: 1,
-    desc: "Estilo formal/casual",
-    precio: "$399",
-    img: "./Assets/Mujer/Blusas/4.jpg",
-  },
-  {
     id: 2,
     nombre: "Pantalón mezclilla clara",
     cantidad: 1,
@@ -22,30 +14,6 @@ const stockProductos = [
     desc: "Trendy/casual",
     precio: 999,
     img: "./Assets/Mujer/Vestidos/4.jpg",
-  },
-  {
-    id: 4,
-    nombre: "Abrigo con bolsas",
-    cantidad: 1,
-    desc: "Casual/Cómodo/Trendy",
-    precio: 899,
-    img: "./Assets/Mujer/Sueteres/3.jpg",
-  },
-  {
-    id: 5,
-    nombre: "Camisa de mezclilla",
-    cantidad: 1,
-    desc: "Casual",
-    precio: 1200,
-    img: "./Assets/Hombre/CamisaMezclilla.jpg",
-  },
-  {
-    id: 6,
-    nombre: "Pantalón negro",
-    cantidad: 1,
-    desc: "Semi Formal",
-    precio: 1299,
-    img: "./Assets/Hombre/PantalonNegro.jpg",
   },
   {
     id: 7,
